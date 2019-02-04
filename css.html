@@ -1,0 +1,5437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="My Programming Directory">
+	<meta name="keywords" content="HTML , CSS , JS , Bootstrap">
+	<meta name="author" content="George Levchenko">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Code Directory</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+	<link rel="stylesheet" href="img/css/fontello.css">
+	<link rel="stylesheet" href="styles/style_index.css">
+	<link rel="stylesheet" href="styles/style_css.css">
+</head>
+<body>
+
+<header>
+	<h1 class="logo_big">Pro<span class="bold_black">-G-</span>running</h1>
+	<h1 class="logo_small">Pro<span class="bold_black">-G-</span></h1>
+</header>
+
+<nav class="not_responsive">
+	<ul class="left_side_nav  not_responsive">
+		<li id="menu"><a href="#">&#9776</a></li>
+		<li class="home_page not_responsive"><a href="index.html"><i class="icon-home"></i></a></li>
+		<li class="html_page not_responsive"><a href="html.html">HTML</a></li>
+		<li class="css_page not_responsive" style="background: #000"><a href="#">CSS</a></li>
+		<li class="bootstrap_page not_responsive"><a href="bootstrap.html">BootsTrap</a></li>
+		<li class="javascript_page not_responsive"><a href="javascript.html">JavaScript</a></li>
+		<li class="typescript_page not_responsive"><a href="typescript.html">TypeScript</a></li>
+		<li class="angular_page not_responsive"><a href="angular.html">Angular</a></li>
+	</ul>
+
+	<ul class="right_side_nav  not_responsive">
+		<li class="practice_page not_responsive"><a href="practice.html">Practice</a></li>
+		<li class="search_field" id="search_field_li">
+			<input type="text" placeholder=" Enter CSS Property" id="search_field" onkeyup="searchCSS()">
+			<i class="icon-search"></i>
+		</li>
+	</ul>
+</nav>
+
+<main>
+	<section class="left_side_anchors">
+		<ul id="left_anchors">
+			<li><a href="#setup">Setup</a></li>
+			<li class="global_table_anchor_top"><a href="#basic_css">Basic CSS</a></li>
+			<li><a href="#sizes">Sizes</a></li>
+			<li><a href="#positioning">Float</a></li>
+			<li><a href="#overflow">Overflow</a></li>
+			<li><a href="#margin_padding">Margin/Padding</a></li>
+			<li><a href="#borders">Borders</a></li>
+			<li><a href="#outline">Outline</a></li>
+			<li><a href="#background">Background</a></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#text_formatting">Text Formatting</a></li>
+			<li><a href="#fonts">Fonts</a></li>
+			<li><a href="#lists">Lists</a></li>
+			<li><a href="#display">Display</a></li>
+			<li><a href="#tables">Tables</a></li>
+			<li><a href="#flexbox">Flexbox</a></li>
+			<li><a href="#grid">Grid</a></li>
+			<li><a href="#columns">Columns</a></li>
+			<li><a href="#position">Position</a></li>
+			<li><a href="#transform">Transform</a></li>
+			<li><a href="#transition">Transition</a></li>
+			<li><a href="#animation">Animation</a></li>
+			<li><a href="#counters">Counters</a></li>
+			<li><a href="#mouse">Cursor/Scroll</a></li>
+			<li class="global_table_anchor_top"><a href="#selectors">Selectors</a></li>
+			<li id="global_table_anchor_bottom"><a href="#functions">Functions</a></li>
+		</ul>
+	</section>
+	<section class="main_text">
+
+			<div class="setup_row anchor_row zebra2" id="setup">
+				<h1>Setup</h1>
+			</div>
+
+			<div class="setup_child tips_table_row zebra1 hidden">
+				<div class="first_column table_column">
+					<p>External</p>
+				</div>
+				<div class="second_column table_column">
+					<p>
+						&lt;head&gt; <br>
+						&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; <br>
+						&lt;/head&gt;
+					</p>
+				</div>
+			</div>
+			<div class="setup_child tips_table_row zebra2 hidden">
+				<div class="first_column table_column">
+					<p>Internal</p>
+				</div>
+				<div class="second_column table_column">
+					<p>
+						&lt;head&gt; <br>
+						&lt;style&gt;<br>
+						body {<br>
+						background-color: linen;
+						}<br>
+						h1 {<br>
+						color: maroon;<br>
+						margin-left: 40px;
+						}<br>
+						&lt;/style&gt;<br>
+						&lt;/head&gt;
+					</p>
+				</div>
+			</div>
+			<div class="setup_child tips_table_row zebra1 hidden">
+				<div class="first_column table_column">
+					<p>Inline</p>
+				</div>
+				<div class="second_column table_column">
+					<p>&lt;h1 style="color:blue;margin-left:30px;"&gt; Heading&lt;/h1&gt;</p>
+				</div>
+			</div>
+
+			<div class="setup_child tips_table_row zebra2 hidden">
+				<div class="first_column table_column">
+					<p>!important</p>
+				</div>
+				<div class="second_column table_column">
+					<p>The highest priority of property rule. <br>
+						.class { <br>
+						color:red !important; <br>
+						}
+					</p>
+				</div>
+			</div>
+
+			<div class="table_row first_row zebra1">
+				<div>
+					<h2>Property</h2>
+				</div>
+				<div>
+					<h2>Description</h2>
+				</div>
+				<div>
+					<h2>Values</h2>
+				</div>
+				<div>
+					<h2>Example</h2>
+				</div>
+			</div>
+		</div>
+<!-- ---------------------------------------------------------Basic HTML------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="basic_css">
+			<h1>Basic CSS</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>all</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Resets all properties (except unicode-bidi and direction)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					initial <br>
+					inherit <br>
+					unset
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					background-color: yellow; <br>
+					color: red; <br>
+					all: initial; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+			<!-- ----------------------Sizes-------------------------------- -->
+
+			<div class="anchor_row zebra3" id="sizes">
+				<h1>Sizes</h1>
+			</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>
+				   height <br>
+				   width
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Sets the height of an element <br>
+					Sets the width of an element
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					% <br>
+					auto
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.a { width: auto;} <br>
+					div.b { width: 150px;} <br>
+					div.c { width: 50%;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					min-height <br>
+					min-width
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Sets the minimum height of an element <br>
+					Sets the minimum width of an element
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.ex1 { <br>
+					    min-height: 200px;} <br>
+					p.ex2 { <br>
+					    min-width: 500px;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>
+					max-height <br>
+					max-width
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Sets the maximum height of an element <br>
+					Sets the maximum width of an element
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					% <br>
+					none
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.ex1 { <br>
+					    max-height: 200px;} <br>
+					p.ex2 { <br>
+					    max-width: 500px;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>box-sizing</p>
+			</div>
+			<div class="second_column table_column">
+				<p> Defines how the width and height of an element are calculated: should they include padding and borders, or not</p>
+			</div>
+			<div class="third_column table_column">
+				<p> 
+					content-box <br>
+					border-box
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    box-sizing: border-box; <br>
+					    width: 50%; <br> 
+					    border: 5px solid red; <br>
+					    float: left;} 
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>object-fit</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					The object-fit property is used to specify how an &lt;img&gt; or &lt;video&gt; should be resized to fit its container.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					fill <br>
+					contain <br>
+					cover <br>
+					none <br>
+					scale-down
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					img.a { <br>
+					    width: 200px; <br>
+					    height: 400px; <br>
+					    object-fit: cover;} 
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>object-position</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					The object-position property is used together with object-fit to specify how an &lt;img&gt; or &lt;video&gt; should be positioned with x/y coordinates inside its "own content box".
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					img.a { <br>
+					    width: 200px; <br>
+					    height: 400px; <br>
+					    object-fit: none; <br>
+					    object-position: 5px 10%; <br>
+					    border: 5px solid red; }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>resize</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether or not an element is resizable by the user</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					both <br>
+					horizontal <br>
+					vertical
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    resize: both; <br>
+					    overflow: auto;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>@media</p>
+			</div>
+			<div class="second_column table_column">
+				<p> The @media rule is used in media queries to apply different styles for different media types/devices.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					min-height <br>
+					max-height <br>
+					min-width <br>
+					max-width <br>
+					orientation <br>
+					…
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					@media screen and (max-width: 600px) { <br>
+					    .topnav a { <br>
+					        float: none; <br>
+					        width: 100%; } }  <br>
+					@media only screen and (orientation: landscape) { <br>
+					    body { <br>
+					        background-color: lightblue; } }
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Float-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="positioning">
+			<h1>Float</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>text-align</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the horizontal alignment of text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					justify <br>
+					center <br>
+					right <br>
+					left
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.c { <br>
+					text-align: center;} <br>
+					div.d { <br>
+					text-align: justify;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>float</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how an element should float</p>
+			</div>
+			<div class="third_column table_column">
+				<p> 
+					none <br>
+					left <br>
+					right
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					img { <br>
+					    float: left;} <br>
+					p.clear { <br>
+					    clear: both;} 
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>clear</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies what elements can float beside the cleared element and on which side</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					left <br>
+					right <br>
+					both
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					img { <br>
+					    float: left;} <br>
+					p.clear { <br>
+					    clear: both;} <br>
+					.clearfix { <br>
+					    overflow: auto;}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------overflow-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="overflow">
+			<h1>Overflow</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>overflow</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies what happens if content overflows an element's box</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					visible <br>
+					hidden <br>
+					scroll <br>
+					auto
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.ex1 { <br>
+					    overflow: scroll;} <br>
+					div.ex2 { <br> 
+					    overflow: hidden;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>overflow-x</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies what to do with the left/right edges of the content if it overflows the element's content area</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					visible <br>
+					hidden <br>
+					scroll <br>
+					auto
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    overflow-x: hidden; <br>
+					    overflow-y: scroll;} <br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>overflow-y</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies what to do with the top/bottom edges of the content if it overflows the element's content area</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					visible <br>
+					hidden <br>
+					scroll <br>
+					auto
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    overflow-x: hidden; <br>
+					    overflow-y: scroll;} <br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Padding/Margin-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="margin_padding">
+			<h1>Margin/Padding</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>
+					margin <br>
+					margin-top <br>	
+					margin-right <br>
+					margin-bottom <br>
+					margin-left
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Used to create space around elements, outside of any defined borders. <br>
+					Sets the top/right/bottom/left margin of an element
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					% <br>
+					auto 
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p { <br>
+					    margin: 25px; <br>
+					    margin: 25px 50px; <br>
+					    margin: 25px 50px 75px; <br>
+					    margin: 25px 50px 75px 100px; }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					padding <br>
+					padding-top <br>
+					padding-right <br>
+					padding-bottom <br>
+					padding-left
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Used to generate space around an element's content, inside of any defined borders. <br>
+					Sets the top/right/bottom/left padding of an element
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p { <br>
+					    padding: 25px;} <br>
+					    padding: 25px 50px; <br>
+					    padding: 25px 50px 75px; <br>
+					    padding: 25px 50px 75px 100px;
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Border-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="borders">
+			<h1>Borders</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>
+					border <br>
+					border-top <br>
+					border-right <br>
+					border-bottom <br>
+					border-left
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets all the border properties in one declaration</p>
+			</div>
+			<div class="third_column table_column">
+				<p>border: border-width border-style border-color;</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					h1 { <br>
+					    border: 5px solid red;} <br>
+					h2 { <br>
+					    border-top: 4px dotted blue;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					border-width <br>
+					border-top-width <br>
+					border-right-width <br>
+					border-bottom-width <br>
+					border-left-width
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the width of the border. Default value is "medium"</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					thin <br>
+					medium <br>
+					thick
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div {border-width: 15px;} <br>
+					div {border-width: 10px 1px;} <br>
+					div {border-width: 10px 5px 15px 8px;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>
+					border-style <br>
+					border-top-style <br>
+					border-right-style <br>
+					border-bottom-style <br>
+					border-left-style
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Specifies the style of the border. Default value is "none".<br> Required
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					hidden <br>
+					dotted <br>
+					dashed <br>
+					solid <br>
+					double <br>
+					groove <br>
+					ridge <br>
+					inset <br>
+					outset
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    border-style: groove; <br>
+					    border-color: coral; <br>
+					    border-width: 7px;} <br>
+					p.one {border-style: dotted solid dashed double;} <br>
+					p.two {border-style: dotted solid dashed;} <br>
+					p.three {border-style: dotted solid;} <br>
+					p.four {border-style: dotted;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					border-color <br>
+					border-top-color <br>
+					border-right-color <br>
+					border-bottom-color <br>
+					border-left- color
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the color of the border. Default value is the color of the text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					color <br>
+					transparent
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.ex1 {border-color: #0000ff;} <br>
+					div.ex2 {border-color: #ff0000 #0000ff;} <br>
+					div.ex3 {border-color: #ff0000 #00ff00 #0000ff;} <br>
+					div.ex4 {border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);} <br>
+					h1 { <br>
+					    border-style: solid; <br>
+					    border-color: rgba(201, 76, 76, 0.3);}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>
+					border-radius <br>
+					border-top-left-radius <br>
+					border-top-right-radius <br>
+					border-bottom-right-radius <br>
+					border-bottom-left-radius
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets all the four border-*-radius properties for rounded corners</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+				#example1 { <br>
+					 border: 2px solid red; <br>
+					 border-radius: 25px;} <br>
+					 border-radius: 50px 20px; <br>
+					 border-radius: 50px 20px 30px 40px;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>border-image</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for setting all the border-image-* properties</p>
+			</div>
+			<div class="third_column table_column">
+				<p>border-image: source slice width outset repeat;</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#borderimg1 { <br>
+					    border: 10px solid transparent; <br>
+					    padding: 15px; <br>
+					    border-image: url(bord.png) 50 round;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>border-image-source</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the path to the image to be used as a border</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+    				image
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#borderimg { <br>
+    				border-image-source: url(border.png);}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>border-image-slice</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how to slice the border image</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					number <br>
+					% <br>
+					fill
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#borderimg {  <br>
+    					border-image-slice: 30%;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>border-image-width</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the widths of the border image</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					number <br>
+					% <br>
+					auto
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p> #borderimg { <br>
+					    border-image-source: url(border.png); <br>
+					    border-image-width: 10px;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>border-image-outset</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the amount by which the border image area extends beyond the border box</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					number
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#borderimg { <br>
+					    border-image-source: url(border.png); <br>
+					    border-image-outset: 10px;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>border-image-repeat</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether the border image should be repeated, rounded or stretched</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					stretch <br>
+					repeat <br>
+					round <br>
+					space
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#borderimg { <br>
+					    border-image-source: url(border.png); <br>
+					    border-image-repeat: repeat;}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Outline-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="outline">
+			<h1>Outline</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>outline</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for setting outline-width, outline-style, and outline-color in one declaration</p>
+			</div>
+			<div class="third_column table_column">
+				<p>outline: outline-width outline-style outline-color;</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.ex1 {outline: dashed;} <br>
+					p.ex2 {outline: dotted red;} <br>
+					p.ex3 {outline: 5px solid yellow;} <br>
+					p.ex4 {outline: thick ridge pink;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>outline-width</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the width of an outline</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					thin <br>
+					medium <br>
+					thick
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div {outline-width: 1px;} <br>
+					div {outline-width: medium;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>outline-style</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the style of an outline <br>
+					Required
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					hidden <br>
+					dotted <br>
+					dashed <br>
+					solid <br>
+					double <br>
+					groove <br>
+					ridge <br>
+					inset <br>
+					outset
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    outline-style: outset; <br>
+					    outline-color: coral; <br>
+					    outline-width: 7px;} <br>
+					p.a {outline-style: dotted;} <br>
+					p.b {outline-style: dashed;} <br>
+					p.c {outline-style: solid;} <br>
+					p.d {outline-style: double;} <br>
+					p.e {outline-style: groove;} <br>
+					p.f {outline-style: ridge;} <br>
+					p.g {outline-style: inset;} <br>
+					p.h {outline-style: outset;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>outline-color</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the color of an outline</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					color <br>
+					invert
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div {outline-color: rgba(201, 76, 76, 0.3);} <br>
+					div {outline-color: #92a8d1;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>outline-offset</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the space between an outline and the edge or border of an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>length</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>div { <br>
+				    outline: 4px solid red; <br>
+				    outline-offset: 15px;}
+				</p>
+			</div>
+		</div>
+
+
+		<!-- ----------------------Background-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="background">
+			<h1>Background</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>background</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets all the background properties in one declaration</p>
+			</div>
+			<div class="third_column table_column">
+				<p>background: bg-color bg-image position bg-size bg-repeat bg-origin bg-clip bg-attachment;</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+				body { <br>
+				    background: blue url("img_tree.gif") no-repeat fixed center;}  <br>
+				#example1 { <br>
+				    background: url(img_tree.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+				    background-size: 50px, 130px, auto;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>background-color</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the background color of an element. <br> Required</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					HEX: #ff0000 <br>
+					RGB:  rgb(255, 76, 0) <br>
+					rgba(201, 76, 76, 0.3) <br>
+					HSL: hsl(89, 43%, 51%) <br>
+					hsla(89, 43%, 51%, 0.3)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body {background-color: #92a8d1;} <br>
+					body {background-color: rgb(201, 76, 76);} <br>
+					body {background-color: rgba(201, 76, 76, 0.3);} <br>
+					p {background-color: hsl(89, 43%, 51%);} <br>
+					p {background-color: hsla(89, 43%, 51%, 0.3);}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>background-image</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the background image for an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					url('URL') <br>
+					none <br>
+					linear-gradient() <br>
+					radial-gradient() <br>
+					repeating-linear-gradient() <br>
+					repeating-radial-gradient()
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>body { <br>
+				    background-image: url("img_tree.gif"), url("paper.gif"); <br>
+				    background-color: #cccccc; }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>background-position</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the starting position of a background image</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					left top <br>
+					left center <br>
+					left bottom <br>
+					right top <br>
+					right center <br>
+					right bottom <br>
+					center top <br>
+					center  <br>
+					center bottom <br>
+					x% y% <br>
+					Xpx Ypx
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body { 
+					    background-position: center top; <br>
+					    background-position: 50% 50%; <br>
+					    background-position: bottom right; <br>
+					    background-position: 50px 150px; } 
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>background-size</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the size of the background images</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					length <br>
+					% <br>
+					cover <br>
+					contain
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body { <br>
+					    background-size: auto; <br>
+					    background-size: 300px 100px; }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>background-repeat</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets how a background image will be repeated</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					no-repeat <br>
+					repeat <br>
+					repeat-x <br>
+					repeat-y <br>
+					space <br>
+					round
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body { <br>
+					    background-image: url("paper.gif"); <br>
+					    background-color: #cccccc; <br>
+					    background-repeat: repeat-y;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>background-origin</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the positioning area of the background images</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					padding-box <br>
+					border-box <br>
+					content-box
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body { <br>
+					    background-image: url("paper.gif"); <br>
+					    background-color: #cccccc; <br>
+					    background-origin: border-box;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>background-clip</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the painting area of the background images</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					padding-box <br>
+					border-box <br>
+					content-box
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>body { <br>
+				    background-image: url("paper.gif"); <br>
+				    background-color: #cccccc; <br>
+				    background-clip: border-box;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>background-attachment</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets whether a background image is fixed or scrolls with the rest of the page</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					scroll <br>
+					fixed <br>
+					local
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body { <br>
+					    background-image: url("paper.gif"); <br>
+					    background-color: #cccccc; <br>
+					    background-attachment: fixed;} 
+					</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Colors-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="colors">
+			<h1>Colors</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>color</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the color of text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>color</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body { <br>
+					    color: red;} <br>
+					h1 { <br>
+					    color: #00ff00;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>opacity</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The opacity property sets the transparency level for an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>number(0…1)</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.first { <br>
+    					opacity: 0.1;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>filter</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The filter property defines visual effects (like blur and saturation) to an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					blur(px) <br>
+					brightness(%) <br>
+					drop-shadow( h-shadow (required) <br>
+					v-shadow (required)   <br>
+					blur (optional) <br>
+					spread (optional)   <br>
+					color (optional)) <br>
+					 grayscale(%) <br>
+					hue-rotate(deg) <br>
+					invert(%) <br>
+					opacity(%) <br>
+					saturate(%) <br>
+					sepia(%) <br>
+					url()
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.blur { <br>
+					    filter: blur(4px);} <br>
+					.brightness { <br>
+					    filter: brightness(0.30);} <br>
+					.contrast { <br>
+					    filter: contrast(180%);} <br>
+					.grayscale { <br>
+					    filter: grayscale(100%);} <br>
+					.huerotate { <br>
+					    filter: hue-rotate(180deg);} <br>
+					.invert { <br>
+					    filter: invert(100%);} <br>
+					.opacity { <br>
+					    filter: opacity(50%);}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>box-shadow</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Adds one or more shadows to an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					text-shadow: <br>
+					h-shadow (required)  <br>
+					v-shadow (required)  <br>
+					blur (optional) <br>
+					spread (optional)  <br>
+					color (optional)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.polaroid {   <br>
+					width: 284px; <br>
+				    padding: 10px 10px 20px 10px; <br>
+				    border: 1px solid #BFBFBF; <br>
+				    background-color: white; <br>
+				    box-shadow: 10px 10px 5px #aaaaaa;}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Text Formatting-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="text_formatting">
+			<h1>Text Formatting</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>vertical-align</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the vertical alignment of an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					baseline <br>
+					length <br>
+					% <br>
+					sub <br> 
+					super <br>
+					text-top <br>
+					text-bottom  <br>
+					top <br>
+					middle <br>
+					bottom
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					img.a { <br>
+					    vertical-align: baseline;} <br>
+					img.d { <br>
+					    vertical-align: sub;} <br>
+					img.e { <br>
+					    vertical-align: super;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>line-height</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the line height</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					number <br>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.a { <br>
+					    line-height: normal; <br>
+					    line-height: 1.6; <br>
+					    line-height: 80%;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>letter-spacing</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Increases or decreases the space between characters in a text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					h2 { <br>
+				    letter-spacing: 2px; <br>
+				    letter-spacing: -1px;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>white-space</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how white-space inside an element is handled</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					nowrap <br>
+					pre <br>
+					pre-line <br>
+					pre-wrap
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.b { <br>
+					    white-space: normal;} <br>
+					p.c { <br>
+					    white-space: pre;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>word-spacing</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Increases or decreases the space between words in a text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p { <br>
+    					word-spacing: 30px;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>text-decoration</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Shorthand. Specifies the decoration added to text
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					text-decoration: text-decoration-line text-decoration-color text-decoration-style;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					h1 { <br>
+					    text-decoration: underline overline dotted red;} <br>
+					h2 { <br>
+					    text-decoration: underline overline wavy blue; }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>text-decoration-line</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Sets the kind of text decoration to use <br>
+					Required.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					underline <br>
+					overline <br>
+					line-through
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.a { <br>
+					    text-decoration-line: overline;} <br>
+					div.d { <br>
+					    text-decoration-line: overline underline;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>text-decoration-color</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the color of the text decoration</p>
+			</div>
+			<div class="third_column table_column">
+				<p>color</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p { <br>
+					    text-decoration-line: underline; <br>
+					    text-decoration-color: red;}
+					</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>text-decoration-style</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the style of the text decoration</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					solid <br>
+					double <br>
+					dotted <br>
+					dashed <br>
+					wavy
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.d { <br>
+					    text-decoration-line: overline underline; <br>
+					    text-decoration-style: wavy;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>text-shadow</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the shadow effect added to text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					text-shadow:  <br>
+					h-shadow (required)   <br>
+					v-shadow (required)   <br>
+					blur-radius (optional)   <br>
+					color (optional)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					h1 { <br>
+					    text-shadow: 2px 2px #ff0000;} <br>
+					h1 { <br>
+					    text-shadow: 0 0 3px #FF0000;} <br>
+					h1 { <br>
+					    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>text-transform</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Controls the capitalization of text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					capitalize <br>
+					uppercase <br>
+					lowercase
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.b { <br>
+					    text-transform: lowercase;} <br>
+					div.c { <br>
+					    text-transform: capitalize;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>text-indent</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the indentation of the first line in a text-block</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.a { <br>
+					    text-indent: 50px;} <br>
+					div.c { <br>
+					    text-indent: 30%;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>text-overflow</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how overflowed content that is not displayed should be signaled to the user</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					clip <br>
+					ellipsis <br>
+					string
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    white-space: nowrap;  <br>
+					    overflow: hidden; <br>
+					    text-overflow: ellipsis;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>text-align-last</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how to align the last line of a text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					left <br>
+					right <br>
+					center <br>
+					justify <br>
+					start <br>
+					end
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.b { <br>
+					    text-align: justify;  <br>
+					    text-align-last: center;} <br>
+					div.c { <br>
+					    text-align: justify;  <br>
+					    text-align-last: justify;} <br>	
+				</p> 
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>text-justify</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how justified text should be aligned and spaced</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					inter-word <br>
+					inter-character <br>
+					none
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    text-align: justify; <br>
+					    text-justify: inter-word;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>word-break</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies line breaking rules for non-CJK scripts</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					break-all <br>
+					keep-all <br>
+					break-word
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.a { <br>
+   					 word-break: break-all;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>word-wrap</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Allows long words to be able to be broken and wrap onto the next line</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					break-word
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+  					  word-wrap: break-word;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>direction</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the text direction/writing direction</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					ltr <br>
+					rtl
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.rtl { <br>
+				    direction: rtl;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>unicode-bidi</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					embed <br>
+					bidi-override <br>
+					isolate <br>
+					isolate-override <br>
+					plaintext
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    direction: rtl; <br>
+					    unicode-bidi: bidi-override;}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------FOnts-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="fonts">
+			<h1>Fonts</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>font</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Shorthand. Sets all the font properties in one declaration</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					font: font-style <br>
+					 font-variant <br>
+					 font-weight <br>
+					 font-size <br>
+					 font-family <br>
+					caption <br>
+					icon <br>
+					menu <br> 
+					message-box <br>
+					small-caption <br>
+					status-bar
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.a { <br>
+					    font: 15px arial, sans-serif;} <br>
+					p.b { <br>
+					    font: italic bold 12px/30px Georgia, serif;} <br>
+					&lt;p style="font:caption"&gt;The browser font used in captioned controls.&lt;/p&gt; <br>
+					&lt;p style="font:icon"&gt;The browser font used in icon labels.&lt;/p&gt; <br>
+					&lt;p style="font:menu"&gt;The browser font used in dropdown menus.&lt;/p&gt; <br>
+					&lt;p style="font:message-box"&gt;The browser font used in dialog boxes.&lt;/p&gt; <br>
+					&lt;p style="font:small-caption"&gt;A smaller version of the caption font.&lt;/p&gt; <br>
+					&lt;p style="font:status-bar"&gt;The browser font used in the status bar.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>font-style</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the font style for text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					italic <br>
+					oblique
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.b { <br>
+    					font-style: italic;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>font-variant</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether or not a text should be displayed in a small-caps font</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					small-caps
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.small { <br>
+   						 font-variant: small-caps;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>font-weight</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the weight of a font</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					bolder <br>
+					lighter <br>
+					100 <br>
+					200 <br>
+					300 <br>
+					400 (normal) <br>
+					… <br>
+					900
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.normal { <br>
+					    font-weight: normal;} <br>
+					p.thick { <br>
+					    font-weight: bold;} <br>
+					p.thicker { <br>
+					    font-weight: 900;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>font-size</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the font size of text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length <br>
+					% <br>
+					medium <br>
+					xx-small <br>
+					x-small <br>
+					small <br>
+					large <br>
+					x-large <br>
+					xx-large <br>
+					smaller <br>
+					larger
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.a { <br>
+					    font-size: 15px;} <br>
+					div.b { <br>
+					    font-size: large;} <br>
+					div.c { <br>
+					    font-size: 150%;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>font-family</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the font family for text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					family-name <br>
+					generic-family <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.a { <br>
+					    font-family: "Times New Roman", Times, serif; } <br>
+					p.b { <br>
+					    font-family: Arial, Helvetica, sans-serif; }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>@font-face</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A rule that allows websites to download and use fonts other than the "web-safe" fonts</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					font-family-name <br>
+					src <br>
+					font-style <br>
+					font-weight
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					@font-face { <br>
+					    font-family: myFirstFont; <br>
+					    src: url(sansation_light.woff);} <br>
+					div { <br>
+					    font-family: myFirstFont;}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Lists-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="lists">
+			<h1>Lists</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>list-style</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Shorthand. Sets all the properties for a list in one declaration</p>
+			</div>
+			<div class="third_column table_column">
+				<p>list-style: list-style-type list-style-position list-style-image;</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>ul { <br>
+					list-style: square inside url("sqpurple.gif"); }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>list-style-type</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the type of list-item marker</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					circle <br>
+					square <br>
+					disc <br>
+					decimal <br>
+					decimal-zero <br>
+					upper-roman <br>
+					lower-roman <br>
+					upper-latin <br>
+					lower-latin <br>
+					upper-alpha <br>
+					lower-alpha
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					ol.v {list-style-type: none;} <br>
+					ul.a {list-style-type: circle;} <br>
+					ul.b {list-style-type: disc;} <br>
+					ul.c {list-style-type: square;} <br>
+					ol.n {list-style-type: lower-alpha;} <br>
+					ol.o {list-style-type: lower-greek;} <br>
+					ol.p {list-style-type: lower-latin;} <br>
+					ol.q {list-style-type: lower-roman;} <br>
+					ol.r {list-style-type: upper-alpha;} <br>
+					ol.s {list-style-type: upper-greek;} <br>
+					ol.t {list-style-type: upper-latin;} <br>
+					ol.u {list-style-type: upper-roman;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>list-style-position</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the position of the list-item markers</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					inside <br>
+					outside
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					ul.b { <br>
+					    list-style-position: inside;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>list-style-image</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies an image as the list-item marker</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					URL
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					ul { <br>
+    					list-style-image: url('sqpurple.gif');}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Display-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="display">
+			<h1>Display</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>display</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how an element should be displayed</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					inline <br>
+					block <br>
+					inline-block <br>
+					contents <br>
+					flex <br>
+					grid <br>
+					inline-flex <br>
+					inline-grid <br>
+					run-in <br>
+					list-item <br>
+					table <br>
+					inline-table <br>
+					table-caption
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					p.ex1 {display: none;} <br>
+					p.ex2 {display: inline;} <br>
+					p.ex3 {display: block;} <br>
+					p.ex4 {display: inline-block;} <br>
+					div { <br>
+					display: flex; <br>
+					flex-direction: row-reverse;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>visibility</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether or not an element should be visible</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					visible <br>
+					hidden <br>
+					collapse
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					h2.a { <br>
+					visibility: visible;} <br>
+					h2.b { <br>
+					visibility: hidden;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>content</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The content property is used with the ::before and ::after pseudo-elements, to insert generated content.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					none <br>
+					counter <br>
+					url(URL) <br>
+					attr(attribute) <br>
+					string <br>
+					open-quote <br>
+					close-quote <br>
+					no-open-quote <br>
+					no-close-quote
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					li::before { <br>
+					content: "•"; /* Insert content that looks like bullets */ <br>
+					} <br>
+					a::after { <br>
+					content: " (" attr(href) ")"; <br>
+					} <br>
+					.clearfix::after { <br>
+					content: ""; <br>
+					clear: both; <br>
+					display: table; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Tables-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="tables">
+			<h1>Tables</h1>
+		</div>
+
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>border-collapse</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether or not table borders should be collapsed</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					separate <br>
+					collapse 
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#table2 { <br>
+   					 border-collapse: collapse;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>border-spacing</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the distance between the borders of adjacent cells</p>
+			</div>
+			<div class="third_column table_column">
+				<p>length length</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#table2 { <br>
+					    border-collapse: separate; <br>
+					    border-spacing: 15px 50px;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>caption-side</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the placement of a table caption</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					top <br>
+					bottom
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#example1 { <br>
+   					 caption-side: bottom;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>empty-cells</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether or not to display borders and background on empty cells in a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					show <br>
+					hide
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					table { <br>
+  					  empty-cells: hide;}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>table-layout</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the layout algorithm to be used for a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					fixed
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					table.b { <br>
+					    table-layout: fixed; <br>
+					    width: 180px; }
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Flexbox-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="flexbox">
+			<h1>Flexbox</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>flex-flow</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for flex-direction and flex-wrap</p>
+			</div>
+			<div class="third_column table_column">
+				<p>flex-flow: flex-direction flex-wrap;</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					display: flex; <br>
+					flex-flow: row-reverse wrap;}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>flex-direction</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the direction of the flexible items inside a flex container</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					row <br>
+					row-reverse <br>
+					column <br>
+					column-reverse
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+   					 display: flex; <br>
+    				flex-direction: row-reverse; }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>flex-wrap</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					nowrap <br>
+					wrap <br>
+					wrap-reverse
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    display: flex; <br>
+					    flex-wrap: wrap;}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>flex</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					flex: flex-grow flex-shrink flex-basis;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#main div { <br>
+    					flex: 0 1 auto;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>flex-grow</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>number</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div:nth-of-type(1) {flex-grow: 1;} <br>
+					div:nth-of-type(2) {flex-grow: 3;} <br>
+					div:nth-of-type(3) {flex-grow: 1;}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>flex-shrink</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>number</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div:nth-of-type(2) { <br>
+    					flex-shrink: 3;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>flex-basis</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The flex-basis property specifies the initial length of a flexible item.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					number <br>
+					auto
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div:nth-of-type(2) { <br>
+   						 flex-basis: 100px;}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>order</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the order of a flexible item relative to the rest of the flex items inside the same container</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					number
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div#myRedDIV {order: 2;} <br>
+					div#myBlueDIV {order: 4;} <br>
+					div#myGreenDIV {order: 3;} <br>
+					div#myPinkDIV {order: 1;}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>justify-content</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Horizontally aligns the flex items when the items do not use all available space on the main-axis</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					flex-start <br>
+					flex-end <br>
+					center <br>
+					space-between <br>
+					space-around
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    display: flex; <br>
+					    justify-content: center; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>align-items</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Vertically aligns the flex items when the items do not use all available space on the cross-axis
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					stretch <br>
+					center <br>
+					flex-start <br>
+					flex-end <br>
+					baseline
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    display: flex; <br>
+					    align-items: center; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>align-content</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					stretch <br>
+					center <br>
+					flex-start <br>
+					flex-end <br>
+					space-between <br>
+					space-around
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    display: flex; <br>
+					    align-content: center; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>align-self</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Used on flex items. Overrides the container's align-items property</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					stretch <br>
+					center <br>
+					flex-start /end <br>
+					baseline
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#myBlueDiv { <br>
+					    align-self: center; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Grid-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="grid">
+			<h1>Grid</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					The grid property is a shorthand property for:  <br>
+					 grid-template-rows <br>
+					grid-template-columns <br>
+					grid-template-areas <br>
+					grid-auto-rows <br>
+					grid-auto-columns <br>
+					grid-auto-flow
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					grid: grid-template-rows <br>
+					grid-template-columns <br>
+					grid-template-areas <br>
+					grid-auto-rows <br>
+					grid-auto-columns <br>
+					grid-auto-flow;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  display: grid; <br>
+					  grid: 150px / auto auto auto; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-template</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for the grid-template-rows, grid-template-columns and grid-areas properties</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					grid-template: grid-template-rows <br>
+					grid-template-columns <br>
+					grid-template-areas; <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  display: grid; <br>
+					  grid-template: 150px / auto auto auto; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid-template-rows</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The grid-template-rows property specifies the number (and the heights) of the rows in a grid layout.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					auto <br>
+					max-content <br>
+					min-content
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  display: grid; <br>
+					  grid-template-rows: 100px 300px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-template-columns</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					auto <br>
+					max-content <br>
+					min-content <br>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  display: grid; <br>
+					  grid-template-columns: auto auto auto auto; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid-template-areas</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The grid-template-areas property specifies areas within the grid layout.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					itemnames
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.item1 { <br>
+					  grid-area: myArea; <br>
+					} <br>
+					.grid-container { <br>
+					  display: grid; <br>
+					  grid-template-areas: "myArea myArea . . ."; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-auto-rows</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The grid-auto-rows property sets a size for the rows in a grid container.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					max-content <br>
+					min-content
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  display: grid; <br>
+					  grid-auto-rows: 150px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid-auto-columns</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The grid-auto-columns property sets a size for the columns in a grid container.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					max-content <br>
+					min-content <br>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  display: grid; <br>
+					  grid-auto-columns: 50px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-auto-flow</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The grid-auto-flow property controls how auto-placed items get inserted in the grid.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					row <br>
+					column <br>
+					row dense <br>
+					column dense
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  display: grid; <br>
+					  grid-auto-flow: column; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid-area</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Either specifies a name for the grid item, or this property is a shorthand property for the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					grid-area: grid-row-start <br>
+					grid-column-start <br>
+					grid-row-end <br>
+					grid-column-end;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.item1 { <br>
+					  grid-area: 2 / 1 / span 2 / span 3; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-row</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for the grid-row-start and the grid-row-end properties</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					grid-row: grid-row-start <br>
+					grid-row-end;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.item1 { <br>
+					  grid-row: 1 / span 2; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid-row-start</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies where to start the grid item</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					row-line
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.item1 { <br>
+					  grid-row-start: 2; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-row-end</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies where to end the grid item</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					span n <br>
+					column-line
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.item1 { <br>
+					  grid-row-end: span 3; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid-column</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for the grid-column-start and the grid-column-end properties</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					grid-column:  <br>
+					grid-column-start <br>
+					grid-column-end;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.item1 { <br>
+					  grid-column: 1 / span 2; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-column-start</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies where to start the grid item</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					column-line
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.item1 { <br>
+					  grid-column-start: 2; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid-column-end</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies where to end the grid item</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					span n <br>
+					column-line
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.item1 { <br>
+					  grid-column-end: span 3; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-gap</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for the grid-row-gap and grid-column-gap properties</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					grid-gap: grid-row-gap <br>
+					grid-column-gap;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  grid-gap: 50px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>grid-row-gap</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the size of the gap between rows</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  grid-row-gap: 50px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>grid-column-gap</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the size of the gap between columns</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.grid-container { <br>
+					  grid-column-gap: 50px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+
+		<!-- ----------------------Columns-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="columns">
+			<h1>Columns</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>columns</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for setting column-width and column-count</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					column-width+  <br>
+					column-count
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    columns: 100px 3; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>column-width</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies a suggested, optimal width for the columns</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    column-width: 100px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>column-count</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the number of columns an element should be divided into</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					number
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    column-count: 3; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>column-rule</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					A shorthand property for setting all the column-rule-* properties
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					column-rule: <br>
+					 column-rule-width <br>
+					 column-rule-style <br>
+					  column-rule-color;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    column-rule: 4px double #ff00ff; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>column-rule-width</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the width of the rule between columns</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					medium <br>
+					thin <br>
+					thick <br>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    column-rule-width: 10px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>column-rule-style</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Specifies the style of the rule between columns
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					hidden <br>
+					dotted <br>
+					dashed <br>
+					solid <br>
+					double <br>
+					groove <br>
+					ridge <br>
+					inset <br>
+					outset
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    column-rule-style: dotted; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>column-rule-color</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the color of the rule between columns</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					color
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    column-rule-color: #ff0000; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>column-span</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how many columns an element should span across</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					all
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					h2 { <br>
+					    column-span: all; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>column-gap</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the gap between the columns</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					length			
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    column-gap: 40px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>column-fill</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how to fill columns</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					balance <br>
+					auto
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.newspaper2 { <br>
+					    column-fill: balance; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Position-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="position">
+			<h1>Position</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>position</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the type of positioning for an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					static <br>
+					fixed <br>
+					sticky <br>
+					relative <br>
+					absolute
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.sticky { <br>
+					    position: sticky; <br>
+					    top: 0; <br>
+					    background-color: green; <br>
+					    border: 2px solid #4CAF50;
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>top</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the top margin edge for a positioned box</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    position: absolute; <br>
+					    top: 50px; <br>
+					    border: 3px solid green; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>right</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the right margin edge for a positioned box</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    position: absolute; <br>
+					    right: 50px; <br>
+					    border: 3px solid green; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>bottom</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the bottom margin edge for a positioned box</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.absolute { <br>
+					    position: absolute; <br>
+					    bottom: 10px; <br>
+					    border: 3px solid green; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>left</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the left margin edge for a positioned box</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					length <br>
+					%
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div.c { <br>
+					    position: absolute; <br>
+					    left: 150px; <br>
+					    border: 3px solid green; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>z-index</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Sets the stack order of an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					number
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					img { <br>
+					    position: absolute; <br>
+					    left: 0px; <br>
+					    top: 0px; <br>
+					    z-index: -1; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>clip</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Clips an absolutely positioned element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					shape (top, right, bottom, left) <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					img { <br>
+					    position: absolute; <br>
+					    clip: rect(0px,60px,200px,0px); <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Transform-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="transform">
+			<h1>Transform</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>transform</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Applies a 2D or 3D transformation to an element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) <br>
+ 					<br>
+					translate(x,y) <br>
+					translateX(n) <br>
+					translateY(n) <br>
+					 <br>
+					scale(x,y) <br>
+					scaleX(n) <br>
+					scaleY(n) <br>
+					 <br>
+					rotate(angle) <br>
+					 <br>
+					skew(x-angle,y-angle) <br>
+					skewX() <br>
+					skewY() <br>
+					 <br>
+					matrix3d(n….n) <br>
+					 <br>
+					translate3d(x,y,z) <br>
+					translateX(x) <br>
+					translateY(y) <br>
+					translateZ(z) <br>
+					 <br>
+					scale3d(x,y,z) <br>
+					scaleX(x) <br>
+					scaleY(y) <br>
+					scaleZ(z) <br>
+					 <br>
+					rotate3d(x,y,z,angle) <br>
+					rotateX(angle) <br>
+					rotateY(angle) <br>
+					rotateZ(angle) <br>
+					 <br>
+					perspective(n) <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+				div { <br>
+				    transform: matrix(1, -0.3, 0, 1, 0, 0); <br>
+				} <br>
+				div { <br>
+				    transform: skew(20deg, 10deg); <br>
+				} <br>
+				div { <br>
+				    transform: rotate(20deg); <br>
+				} <br>
+				div { <br>
+				    transform: translate(50px, 100px); <br>
+				} <br>
+				div { <br>
+				    transform: scale(2, 3); <br>
+				}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>transform-origin</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Allows you to change the position on transformed elements</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					x-axis (left, center, right, length, %) <br>
+					y-axis (left, center, right, length, %) <br>
+					z-axis (length) 
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    transform: rotate(45deg); <br>
+					    transform-origin: 20% 40%; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>transform-style</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how nested elements are rendered in 3D space</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					flat <br>
+					preserve-3d
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    transform: rotateY(60deg); <br>
+					    transform-style: preserve-3d; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>perspective</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the perspective on how 3D elements are viewed</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					length
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#div1 { <br>
+					    perspective: 100px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>perspective-origin</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the bottom position of 3D elements</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					x-axis (left, center, right, length, %) <br>
+					y-axis (left, center, right, length, %)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#div1 {
+					    perspective: 100px; <br>
+					    perspective-origin: left; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>backface-visibility</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines whether or not an element should be visible when not facing the screen</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+						hidden <br>
+						visible
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					#div1 { <br>
+					    backface-visibility: hidden; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Transition-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="transition">
+			<h1>Transition</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>transition</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for setting the four transition properties into a single property</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					transition: <br>
+					 property <br>
+					  duration <br>
+					   timing-function <br>
+					    delay;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					input[type=text] { <br>
+					    width: 100px; <br>
+					    transition: width .35s ease-in-out; <br>
+					} <br>
+
+					input[type=text]:focus { <br>
+					    width: 250px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>transition-property</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the name of the CSS property the transition effect is for</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					all <br>
+					property
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    transition-property: width, height; <br>
+					} <br>
+
+					div:hover { <br>
+					    width: 300px; <br>
+					    height: 300px; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>transition-duration</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how many seconds or milliseconds a transition effect takes to complete. <br>
+				 Required.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					time
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    transition-duration: 5s; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>transition-timing-function</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the speed curve of the transition effect</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					linear <br>
+					ease <br>
+					ease-in <br>
+					ease-out <br>
+					ease-in-out <br>
+					step-start <br>
+					step-end <br>
+					cubic-bezier(n,n,n,n)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    transition-timing-function: linear; <br>
+					} <br>
+
+					div { <br>
+					    transition: width 2s; <br>
+					    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>transition-delay</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies a delay (in seconds) for the transition effect</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					time
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					div { <br>
+					    transition-delay: 2s; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Animation-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="animation">
+			<h1>Animation</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>@keyframes</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the animation code</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					animationname <br>
+					keyframes-select(0-100%)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>animation</p>
+			</div>
+			<div class="second_column table_column">
+				<p>A shorthand property for setting all the animation properties</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					animation:
+					 name <br>
+					  duration <br>
+					   timing-function <br>
+					    delay <br>
+					     iteration-count <br>
+					      direction <br>
+					       fill-mode <br>
+					        play-state;
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>animation-name</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the name of the @keyframes animation</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					keyframename
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>animation-duration</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies how long time an animation should take to complete one cycle</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					time
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>animation-timing-function</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the speed curve of the animation</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					linear <br>
+					ease <br>
+					ease-in <br>
+					ease-out <br>
+					ease-in-out <br>
+					step-start <br>
+					step-end <br>
+					cubic-bezier(n,n,n,n)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>animation-delay</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies a delay for the start of an animation</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					time
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>animation-iteration-count</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the number of times an animation should be played</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					number <br>
+					infinite
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>animation-direction</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether an animation should be played forwards, backwards or in alternate cycles</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					normal <br>
+					reverse <br>
+					alternate <br>
+					alternate-reverse
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>animation-fill-mode</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					forwards <br>
+					backwards <br>
+					both
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>animation-play-state</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether the animation is running or paused</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					paused <br>
+					running
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;style&gt;  <br>
+						div { <br>
+						    width: 100px; <br>
+						    height: 100px; <br>
+						    background-color: red; <br>
+						    position: relative; <br>
+                         <br>
+						    animation-name: example; <br>
+						    animation-duration: 5s; <br>
+						    animation-timing-function: linear; <br>
+						    animation-delay: 2s; <br>
+						    animation-iteration-count: infinite; <br>
+						    animation-direction: alternate; <br>
+						} <br>
+                         <br>
+				 		@keyframes example { <br>
+						    0%   {background-color:red; left:0px; top:0px;} <br>
+						    25%  {background-color:yellow; left:200px; top:0px;} <br>
+						    50%  {background-color:blue; left:200px; top:200px;} <br>
+						    75%  {background-color:green; left:0px; top:200px;} <br>
+						    100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+					&lt;/style&gt;
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------counters-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="counters">
+			<h1>Counters</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>counter-reset</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Creates or resets one or more counters</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					id number
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body { <br>
+					counter-reset: section; <br>
+					} <br>
+
+					h1 { <br>
+					counter-reset: subsection; <br>
+					} <br>
+
+					h1::before { <br>
+					counter-increment: section; <br>
+					content: "Section " counter(section) ": "; <br>
+					} <br>
+
+					h2::before { <br>
+					counter-increment: subsection; <br>
+					content: counter(section) "." counter(subsection) " "; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>counter-increment</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Increments one or more counter values</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					none <br>
+					id number
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					body { <br>
+					counter-reset: section; <br>
+					} <br>
+
+					h1 { <br>
+					counter-reset: subsection; <br>
+					} <br>
+
+					h1::before { <br>
+					counter-increment: section; <br>
+					content: "Section " counter(section) ": "; <br>
+					} <br>
+
+					h2::before { <br>
+					counter-increment: subsection; <br>
+					content: counter(section) "." counter(subsection) " "; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------mouse-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="mouse">
+			<h1>Cursor/Scroll</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>cursor</p>
+			</div>
+			<div class="second_column table_column">
+				<p>The cursor property specifies the mouse cursor to be displayed when pointing over an element.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					alias <br>
+					all-scroll <br>
+					auto <br>
+					cell <br>
+					context-menu <br>
+					col-resize <br>
+					copy <br>
+					crosshair <br>
+					default <br>
+					e / ew-resize <br>
+					grab <br>
+					grabbing <br>
+					help <br>
+					move <br>
+					n / ne / ns / nw-resize <br>
+					nesw-resize <br>
+					nwse-resize <br>
+					no-drop  <br>
+					none <br>
+					not-allowed <br>
+					pointer <br>
+					progress <br>
+					row-resize <br>
+					s / se / sw-resize <br>
+					text <br>
+					url <br>
+					w-resize <br>
+					wait <br>
+					zoom-in / out
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					.auto {cursor: auto;} <br>
+					.cell {cursor: cell;} <br>
+					.context-menu {cursor: context-menu;} <br>
+					.col-resize {cursor: col-resize;} <br>
+                    <br>
+					&lt;p class="auto"&gt;auto&lt;/p&gt; <br>
+					&lt;p class="cell"&gt;cell&lt;/p&gt; <br>
+					&lt;p class="context-menu"&gt;context-menu&lt;/p&gt; <br>
+					&lt;p class="col-resize"&gt;col-resize&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>scroll-behavior</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies whether to smoothly animate the scroll position in a scrollable box, instead of a straight jump</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					auto <br>
+					smooth
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					html { <br>
+					  scroll-behavior: smooth; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+
+<!-- ----------------------Selector Table-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="selectors">
+			<h1>Selectors</h1>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>.class</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>.intro</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all elements with class="intro"
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>#id</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>#firstname</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects the element with id="firstname"
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>*</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>*</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all elements
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>element</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all &lt;p&gt; elements
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>element,element</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>div, p</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all &lt;div&gt; elements and all &lt;p&gt; elements
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>element element</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>div p</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all &lt;p&gt; elements inside &lt;div&gt; elements
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>element>element</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>div > p</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>element+element</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>div + p</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all &lt;p&gt; elements that are placed immediately after &lt;div&gt; elements
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>element1~element2</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p ~ ul</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;ul&gt; element that are preceded by a &lt;p&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>[attribute]</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>[target]</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all elements with a target attribute
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>[attribute=value]</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>[target=_blank]</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all elements with target="_blank"
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>[attribute~=value]</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>[title~=flower]</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all elements with a title attribute containing the word "flower"
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>[attribute|=value]</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>[lang|=en]</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all elements with a lang attribute value starting with "en"
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>[attribute^=value]</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>a[href^="https"]</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;a&gt; element whose href attribute value begins with "https"
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>[attribute$=value]</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>a[href$=".pdf"]</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;a&gt; element whose href attribute value ends with ".pdf"
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>[attribute*=value]</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>a[href*="w3schools"]</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;a&gt; element whose href attribute value contains the substring "w3schools"
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>::after</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p::after</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Insert content after every &lt;p&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>::before</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p::before</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Insert content before every &lt;p&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>::first-letter</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p::first-letter</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects the first letter of every &lt;p&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>::first-line</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p::first-line</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects the first line of every &lt;p&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>::selection</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p::selection</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects the portion of an element that is selected by a user
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:link</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>a:link</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all unvisited links
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:visited</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>a:visited</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all visited links
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:hover</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>a:hover</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects links on mouse over
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:active</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>a:active</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects the active link
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:target</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>#news:target</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects the current active #news element (clicked on a URL containing that anchor name)
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:root</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>:root</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects the document's root element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:empty</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:empty</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that has no children (including text nodes)
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:not(selector)</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>:not(p)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every element that is not a &lt;p&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:lang(language)</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:lang(it)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element with a lang attribute equal to "it" (Italian)
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:only-of-type</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:only-of-type</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:only-child</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:only-child</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that is the only child of its parent
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:last-child</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:last-child</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that is the last child of its parent
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:last-of-type</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:last-of-type</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:nth-child(n)</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:nth-child(2)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that is the second child of its parent
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:nth-last-child(n)</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:nth-last-child(2)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:nth-last-of-type(n)</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:nth-last-of-type(2)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last child
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:nth-of-type(n)</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>p:nth-of-type(2)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:focus</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:focus</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects the input element which has focus
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:checked</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:checked</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every checked &lt;input&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:disabled</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:disabled</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects every disabled &lt;input&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:enabled</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:enabled</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>:invalid
+					Selects every enabled &lt;input&gt; element
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:invalid</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:invalid</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all input elements with an invalid value
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:valid</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:valid</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects all input elements with a valid value
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:required</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:required</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects input elements with the "required" attribute specified
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:optional</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:optional</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects input elements with no "required" attribute
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:read-only</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:read-only</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects input elements with the "readonly" attribute specified
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:read-write</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:read-write</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects input elements with the "readonly" attribute NOT specified
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>:in-range</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:in-range</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects input elements with a value within a specified range
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>:out-of-range</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>input:out-of-range</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					Selects input elements with a value outside a specified range
+				</p>
+			</div>
+		</div>
+
+		<!-- ----------------------Function Table-------------------------------- -->
+
+		<div class="anchor_row zebra3" id="functions">
+			<h1>Functions</h1>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>attr() </p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Returns the value of an attribute of the selected element</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					a:after { <br>
+					    content: " (" attr(href) ")"; <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>calc()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Allows you to perform calculations to determine CSS property values</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#div1 { <br>
+				    position: absolute; <br>
+				    left: 50px; <br>
+				    width: calc(100% - 100px); <br>
+				     }
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>cubic-bezier()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Defines a Cubic Bezier curve</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					div { <br>
+					    transition: width 2s; <br>
+					    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); <br>
+					} <br>
+					div:hover { <br>
+					width:300px <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>var()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Inserts the value of a custom property</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					:root { <br>
+					    --main-bg-color: coral;  <br>
+					} <br>
+					#div1 { <br>
+					    background-color: var(--main-bg-color);  <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>rgb()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Defines colors using the Red-Green-Blue model (RGB)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#p1 {background-color:rgb(255,0,0);} /* red */ <br>
+					#p2 {background-color:rgb(0,255,0);} /* green */ <br>
+					#p3 {background-color:rgb(0,0,255);} /* blue */ 
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>rgba()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Defines colors using the Red-Green-Blue-Alpha model (RGBA)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#p1 {background-color:rgba(255,0,0,0.3);} /* red with opacity*/ <br>
+					#p2 {background-color:rgba(0,255,0,0.3);} /* green with opacity */ <br>
+					#p3 {background-color:rgba(0,0,255,0.3);} /* blue with opacity */
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>hsl()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Defines colors using the Hue-Saturation-Lightness model (HSL)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#p1 {background-color:hsl(120,100%,50%);} /* green */ <br>
+					#p2 {background-color:hsl(120,100%,75%);} /* light green */ <br>
+					#p3 {background-color:hsl(120,100%,25%);} /* dark green */
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>hsla()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Defines colors using the Hue-Saturation-Lightness-Alpha model (HSLA)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#p1 {background-color:hsla(120,100%,50%,0.3);} /* green */ <br>
+					#p2 {background-color:hsla(120,100%,75%,0.3);} /* light green */ <br>
+					#p3 {background-color:hsla(120,100%,25%,0.3);} /* dark green */
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>linear-gradient()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Sets a linear gradient as the background image. Define at least two colors (top to bottom)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#grad { <br>
+					    background-image: linear-gradient(red, yellow, blue); } <br>
+					#grad { <br>
+					  background-image: linear-gradient(to bottom right, red , blue); <br>
+					} <br>
+					#grad { <br>
+					  background-image: linear-gradient(180deg, red, blue); }
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>radial-gradient()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Sets a radial gradient as the background image. Define at least two colors (center to edges)</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#grad { <br>
+					  background-image: radial-gradient(red, green, blue);<br>
+					} <br>
+					#grad { <br>
+					  background-image: radial-gradient(circle, red, yellow, green); <br>
+					} <br>
+					#grad { <br>
+					  background-image: radial-gradient(red 5%, green 15%, blue 60%); <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra1">
+			<div class="selector_first_column selector_table_column">
+				<p>repeating-linear-gradient()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Repeats a linear gradient</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#grad { <br>
+					   background-image: repeating-linear-gradient(red, yellow 10%, green 20%); <br>
+					} <br>
+					#grad1 { <br>
+					   background-image: repeating-linear-gradient(45deg, red, blue 7%, green 10%); <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="selector_table_row zebra2">
+			<div class="selector_first_column selector_table_column">
+				<p>repeating-radial-gradient()</p>
+			</div>
+			<div class="selector_second_column selector_table_column">
+				<p>Repeats a radial gradient</p>
+			</div>
+			<div class="selector_third_column selector_table_column">
+				<p>
+					#grad { <br>
+					   background-image: repeating-radial-gradient(red, yellow 10%, green 15%); <br>
+					} <br>
+					#grad { <br>
+					    background-image: repeating-radial-gradient(circle, red, yellow 10%, green 15%); <br>
+					}
+				</p>
+			</div>
+		</div>
+
+		<footer>
+			<h4>All Rights Reserved (c)</h4>
+		</footer>
+	</section>
+</main>
+
+
+
+
+<script src="scripts/search_css.js"></script>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

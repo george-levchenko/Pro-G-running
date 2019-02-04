@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="My Programming Directory">
+	<meta name="keywords" content="HTML , CSS , JS , Bootstrap">
+	<meta name="author" content="George Levchenko">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Code Directory</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+	<link rel="stylesheet" href="img/css/fontello.css">
+	<link rel="stylesheet" href="styles/style_index.css">
+	<link rel="stylesheet" href="styles/style_typescript.css">
+</head>
+<body>
+
+<header>
+	<h1 class="logo_big">Pro<span class="bold_black">-G-</span>running</h1>
+	<h1 class="logo_small">Pro<span class="bold_black">-G-</span></h1>
+</header>
+
+<nav class="not_responsive">
+	<ul class="left_side_nav  not_responsive">
+		<li id="menu"><a href="#">&#9776</a></li>
+		<li class="home_page not_responsive"><a href="index.html"><i class="icon-home"></i></a></li>
+		<li class="html_page not_responsive"><a href="html.html">HTML</a></li>
+		<li class="css_page not_responsive"><a href="css.html">CSS</a></li>
+		<li class="bootstrap_page not_responsive"><a href="bootstrap.html">BootsTrap</a></li>
+		<li class="javascript_page not_responsive"><a href="javascript.html">JavaScript</a></li>
+		<li class="typescript_page not_responsive" style="background: #000"><a href="#">TypeScript</a></li>
+		<li class="angular_page not_responsive"><a href="angular.html">Angular</a></li>
+	</ul>
+
+	<ul class="right_side_nav  not_responsive">
+		<li class="practice_page not_responsive"><a href="practice.html">Practice</a></li>
+		<li class="search_field" id="search_field_li">
+			<input type="text" placeholder=" Enter Typescript Theme" id="search_field" onkeyup="searchTypescript()">
+			<i class="icon-search"></i>
+		</li>
+	</ul>
+</nav>
+
+<main>
+	<section class="left_side_anchors">
+		<ul id="left_anchors">
+			<li><a href="#types_of_data">Types of Data</a></li>
+			<li><a href="#data_properties">Data Properties</a></li>
+			<li><a href="#functions">Function</a></li>
+			<li><a href="#oop_class">Class</a></li>
+			<li><a href="#oop_interface">Interface</a></li>
+			<li><a href="#namespaces">NameSpace</a></li>
+			<li><a href="#modules">Module</a></li>
+			<li><a href="#decorator">Decorator</a></li>
+		</ul>
+	</section>
+	<section class="main_text">
+
+		<div class="table_row first_row zebra1">
+			<div>
+				<h2>Theme</h2>
+			</div>
+			<div>
+				<h2>Description</h2>
+			</div>
+			<div>
+				<h2>Example</h2>
+			</div>
+		</div>
+
+		<!-- ---------------------------------------------------------Types of Data------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="types_of_data">
+			<h1>Types of Data</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Number</p>
+			</div>
+			<div class="second_column table_column">
+				<p>числовое значение</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let x: number = 10; <br>
+					let x = 10; <br>
+					let decimal: number = 6; <br>
+					let hex: number = 0xf00d; <br>
+					let binary: number = 0b1010; <br>
+					let octal: number = 0o744;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>String</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Строки <br>
+
+					-поддерживает такую функциональность, как шаблоны строк, то есть мы можем задать шаблон в косых кавычках (`), как если бы мы писали обычную строку, и затем в саму строку можно встраивать разные выражения с помощью синтаксиса ${ expr }, где expr - это выражение.
+					- Косые кавычки также можно применять для установки многострочного текста:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let hello: string = "hello world"; <br>
+					let hello = "hello world"; <br>
+					let hello = ‘hello world’; <br>
+					let info: string = `Имя ${firstName}    Возраст: ${age}`; <br>
+					console.log(info);  // Имя Tom    Возраст: 28 <br>
+					let sentence: string = `Hello World!  &lt;br&gt; <br>
+					Goob bye World!`;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Boolean</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					логическое значение true или false
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let isValid: boolean = true; <br>
+					let isValid = true;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Array</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					массивы <br>
+
+					- Массивы определяются с помощью выражения []
+					и также являются строго типизированными.
+					То есть если изначально массив содержит строки,
+					то в будущем он сможет работать только со строками. <br>
+					- Альтернативный способ определения массивов представляет применение типа Array<>:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let list: number[] = [10, 20, 30]; <br>
+					let colors: string[] = ["red", "green", "blue"]; <br>
+
+					let names: Array&lt;string&gt; = ["Tom", "Bob", "Alice"];
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Tuple</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Кортежи <br>
+					- набор элементов, для которых уже заранее известен тип.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let userInfo: [string, number]; <br>
+					userInfo = ["Tom", 28];
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Enum</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Перечисления <br>
+					- предназначен для описания набора числовых данных с помощью строковых констант. <br>
+					- По умолчанию: значения 0,1,2,3… <br>
+					- значения можно переопределить <br>
+					- можем получить непосредственно текстовое значение:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					enum Season { Winter, Spring, Summer, Autumn }; <br>
+					let current: Season = Season.Summer; // 2 <br>
+					var current: string = Season[2];    // 2 - числовое значение Summer <br>
+
+					enum Season { Winter=4, Spring=8, Summer=16, Autumn=32 };   // 4, 8, 16, 32
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Object</p>
+			</div>
+			<div class="second_column table_column">
+				<p>В typescript - cтрогая типизация</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let person = { name: "Tom", age: 23 }; <br>
+					person = { name: "Alice" }; // ошибка! Должно быть строго 2 поля: name и age, определённого типа!
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Any</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					произвольный тип <br>
+
+					- описывает данные, тип которых может быть неизвестен на момент написания приложения. <br>
+					- можем объявлять массивы данного типа <br>
+					-Если же переменная определяется без значения, и только впоследствии при работе программы ей присваивается значение, тогда считается, что она имеет тип any:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let x: any = 10; <br>
+					let x;  // тип any <br>
+					x = 10; <br>
+
+					let someVar: any = "hello"; <br>
+					someVar = 20; <br>
+
+					let someArray: any[] = [ 24, "Tom", false];
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>null</p>
+			</div>
+			<div class="second_column table_column">
+				<p>значение не определено <br>
+					-мы можем присваивать значения null переменным других типов
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let b: null = null; <br>
+
+					let x: number = 10; <br>
+					x = null;
+
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>undefined</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Значение не присвоено <br>
+					- мы можем присваивать значения undefined переменным других типов
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let a: undefined = undefined; <br>
+
+					let x: number = undefined; <br>
+					x = 5;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>void</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					отсутствие конкретного значения, используется в основном в качестве возвращаемого типа функций
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>never</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Также представляет отсутствие значения и используется в качестве возвращаемого типа функций, которые генерируют или возвращают ошибку</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+		</div>
+
+		<!-- ---------------------------------------------------------Data Properties------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="data_properties">
+			<h1>Data Properties</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Type union</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					объединение <br>
+
+					позволяют определить переменную, которая может хранить значение двух или более типов:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>let id : number | string; <br>
+					id = "1345dgg5"; <br>
+					id = 234;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>type</p>
+			</div>
+			<div class="second_column table_column">
+				<p>позволяет определять псевдонимы типов</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					type stringOrNumberType = number | string; <br>
+					let sum: stringOrNumberType = 36.6;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Typeof</p>
+			</div>
+			<div class="second_column table_column">
+				<p>мы можем проверить тип переменной. Это может быть необходимо, когда мы хотим выполнить некоторые операции с переменной, но нам неизвестен ее точный тип</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let sum: any; <br>
+					sum = 1200; <br>
+					if (typeof sum === "number") { <br>
+					let result: number = sum / 12;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Type assertion</p>
+			</div>
+			<div class="second_column table_column">
+				<p>представляет модель преобразования значения переменной к определенному типу. Обычно в некоторых ситуациях одна переменная может представлять какой-то широкий тип, например, any, который по факту допускает значения различных типов. Однако при этом нам надо использовать переменную как значение строго определенного типа. И в этом случае мы можем привести к этому типу.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let someAnyValue: any = "hello world!"; <br>
+					let strLength: number = (&lt;string&gt;someAnyValue).length; <br>
+
+					let someAnyValue: any = "hello world!"; <br>
+					let strLength: number = (someAnyValue as string).length;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Generalizations</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Обобщения <br>
+					- С помощью выражения &lt;T&gt; мы указываем, что функция типизирована определенным типом T. При выполнении функции вместо Т будет подставляться конкретный тип. Причем на этапе компиляции конкретный тип не известен. И возвращать функция будет объект этого типа.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function getId&lt;T&gt;(id: T): T { <br>
+
+					return id;
+					} <br>
+					let result1 = getId&lt;number&gt;(5); <br>
+					let result2 = getId&lt;string&gt;("abc"); <br>
+
+					function getString&lt;T&gt;(arg: Array&lt;T&gt;): string {<br>
+					let result = "";<br>
+					for (let i = 0; i &lt; arg.length; i++) {<br>
+					if (i &gt; 0)<br>
+					result += ",";<br>
+					result += arg[i].toString();
+					}<br>
+					return result;
+					}<br>
+
+					let result = getString&lt;number&gt;( [1, 2, 34, 5]);
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------------------------------------------Function------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="functions">
+			<h1>Functions</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Definition</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-мы можем определить тип передаваемых параметров и тип возвращаемого значения. <br>
+					- Если функция ничего не возвращает, то указывается тип void: <br>
+					- мы можем и не указывать тип, тогда он будет выводиться неявно на основе возвращаемого значения:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					// определение функции <br>
+					function add(a: number, b: number): number {<br>
+					return a + b;
+					}<br>
+					let add = function (a: number, b: number) : void {<br>
+					console.log(a + b);
+					}<br>
+					function add(a: number, b: number){<br>
+					return a + b;
+					}
+				</p>
+			</div>
+		</div>
+
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					Optional parameters</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Необязательные параметры должны быть помечены вопросительным знаком ?. Причем необязательные параметры должны идти после обязательных:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function getName(firstName: string, lastName?: string) { <br>
+					if (lastName) <br>
+					return firstName + " " + lastName; <br>
+					else <br>
+					return firstName;
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Default parameters</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Параметры по умолчанию позволяют задать начальное значение. И если для такого параметра не передается значение, то он использует значение по умолчанию:
+					<br>
+					- в качестве значения можно передавать результат другой функции:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function getName(firstName: string, lastName: string="Иванов") { <br>
+
+					return firstName + " " + lastName;
+					} <br>
+
+					function getName(firstName: string, lastName: string=defaultSurname()) { <br>
+					return firstName + " " + lastName;
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					Undefined number of parameters</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Если же необходимо, чтобы функция принимала набор однотипных параметров, то используется знак многоточия, после которого идет массив:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function addNumbers(firstNumber: number, ...numberArray: number[]): number { <br>
+
+					let result = firstNumber; <br>
+					for (let i = 0; i < numberArray.length; i++) { <br>
+					result+= numberArray[i];
+					} <br>
+					return result;
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>
+					Overloading Functions
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- TypeScript поддерживает возможность перегрузки функций, то есть мы можем определить несколько версий функции, которые будут иметь одно и то же имя, но разные типы параметров или разное количество параметров или разные возвращаемые типы результатов. Для перегрузки вначале опеределяем все версии функции, которые не будут иметь никакой логики. А потом определяем версию функции с общей сигнатурой, которая подходит под все ранее определенные варианты. И в этой общей версии уже определяем конкретную логику функции.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function add(x: string, y: string): string; <br>
+					function add(x: number, y: number): number;<br>
+					function add(x: any, y: any): any {<br>
+					return x + y;
+					}<br>
+					let result1 = add(5, 4); // 9<br>
+					let result2 = add("5", "4"); // 54<br>
+					let result3 = add(true, false); // error
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Type of function</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-можно определять переменные, которые имеют тип функции: <br>
+
+					let op: (x:number, y:number) => number; <br>
+
+					То есть переменная op представляет любую функцию, которая принимает два числа и которая возвращает число.
+					<br>
+
+					- Тип функции можно использовать как тип переменной, но он также может применяться для определения типа параметра другой функции:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function sum (x: number, y: number): number { <br>
+					return x + y;
+					};<br>
+					function subtract (a: number, b: number): number {<br>
+					return a - b;
+					};<br>
+
+					let op: (x:number, y:number) => number;<br>
+
+					op = sum;<br>
+					op = subtract;<br>
+
+					function mathOp(x: number, y: number, operation: (a: number, b: number) => number): number{<br>
+
+					let result = operation(x, y);<br>
+					return result;
+					}<br>
+					let operationFunc: (x: number, y: number) => number;<br>
+					operationFunc = function (a: number, b: number): number {<br>
+					return a + b;
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Arrow functions</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-Стрелочные функции представляют выражения типа (параметры) => тело функции. <br>
+					- Тип параметров можно опускать: <br>
+					- Если стрелочная функция не требует параметров, то используются пустые круглые скобки. Если передается только один параметр, то скобки можно опустить:
+					<br>
+					- Если тело функции представляет множество выражений, а не просто одно выражение, тогда нужно заключить все выражения в фигурные скобки и указать return
+					<br>
+					- Стрелочные функции можно передавать в функцию вместо параметра, который представляет собой функцию:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let sum = (x: number, y: number) => x + y; <br>
+
+					let sum = (x, y) => x + y; <br>
+
+					let square = x => x * x; <br>
+					let hello = () => "hello world" <br>
+
+					let sum = (x: number, y: number) => { <br>
+					x *= 2; <br>
+					return x + y;
+					}; <br>
+
+					function mathOp(x: number, y: number, operation: (a: number, b: number) => number): number{}
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------------------------------------------OOP------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="oop_class">
+			<h1>Class</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>class</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Класс представляет шаблон для создания объектов и инкапсулирует функциональность, которую должен иметь объект. Класс определяет состояние и поведение, которыми обладает объект.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+
+					id: number;<br>
+					name: string;<br>
+					getInfo(): string {<br>
+					return "id:" + this.id + " name:" + this.name;
+					}
+					}<br>
+					let tom: User = new User();
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>constructor</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Конструкторы выполняют начальную инициализацию объекта.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+
+					id: number;<br>
+					name: string;<br>
+					constructor(userId: number, userName: string) {<br>
+
+					this.id = userId;<br>
+					this.name = userName;
+					}<br>
+					getInfo(): string {<br>
+					return "id:" + this.id + " name:" + this.name;
+					}
+					}<br>
+
+					let tom: User = new User(1, "Tom");
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>static</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Кроме обычных свойств и функций класс может иметь статические. Для использования статических функций и свойств не надо создавать объект класса.</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class Operation { <br>
+
+					static PI: number = 3.14;<br>
+
+					static getSquare(radius: number): number {<br>
+
+					return Operation.PI * radius * radius;
+					}
+					}<br>
+					let result = Operation.getSquare(30);
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>public</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-Одной из ключевых концепций объектно-ориентированного программирования является инкапсуляция, подразумевающая сокрытие от внешнего доступа к состоянию объекта и управление доступом к этому состоянию.
+					<br>
+					- Если к свойствам и функциям классов не применяется модификатор, то такие свойства и функции расцениваются как будто они определены с модификатором public.
+					<br>
+					- Использование модификаторов в параметрах конструктора позволяет сократить написание кода.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+
+					name: string;<br>
+					year: number;
+					}<br>
+
+					class User {<br>
+
+					public name: string;<br>
+					public year: number;
+					}<br>
+
+					class User {<br>
+
+					constructor(public name: string, public age: number) {
+					}
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>private</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-Если же к свойствам и методам применяется модификатор private, то к ним нельзя будет обратиться извне при создании объекта данного класса.
+					<br>
+					-Нередко приватные свойства в своем названии в качестве первого символа имеют символ подчеркивания. Но не обязательно так делать, это скорее сложившаяся практика.
+					<br>
+					- Использование модификаторов в параметрах конструктора позволяет сократить написание кода.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+
+					private _name: string; <br>
+					private _year: number; <br>
+
+					constructor(name: string, age: number) { <br>
+
+					this._name = name; <br>
+					this._year = this.setYear(age);
+					} <br>
+					public displayYear(): void { <br>
+					console.log("Год рождения: " + this._year);
+					} <br>
+
+					public displayName(): void { <br>
+					console.log("name: " + this._name);
+					} <br>
+
+					private setYear(age: number): number { <br>
+
+					return new Date().getFullYear() - age;
+					}
+					<br>
+					let tom = new User("Tom", 24); <br>
+
+					class User { <br>
+
+					constructor(private name: string, private age: number) {
+					} <br>
+					public displayInfo(): void { <br>
+
+					console.log("name: " + this.name + "; age: " + this.age);
+					}
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>protected</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Модификатор protected во многом аналогичен private <br>
+					- свойства и методы с данным модификатором не видны из вне, но к ним можно обратиться из классов-наследников
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+					private name: string;<br>
+					protected age: number;<br>
+					constructor(name: string, age: number) {<br>
+					this.name = name;<br>
+					this.age = age;
+					}<br>
+					public displayInfo(): void {<br>
+
+					console.log("name: " + this.name + "; age: " + this.age);
+					}
+					}<br>
+					class Employee extends User {<br>
+
+					private company: string;<br>
+					constructor(name: string, age: number, company: string) {<br>
+					super(name, age);<br>
+					this.company = company;
+					}<br>
+					public showData(): void {<br>
+					console.log("Age: " + this.age); }
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>get/set</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Называются Аксессорами <br>
+					- Для доступа к свойству определяется пара методов - get-метод для получения значения свойства и set-метод для установки значения.
+					<br>
+					- Методы доступа определяются как обычные методы, только перед ними ставятся ключевые слова get/set. Set-метод контроллирует установку значения, а get-метод возвращает значение.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+
+					private _name: string; <br>
+
+					public get name(): string {<br>
+					return this._name;
+					}<br>
+
+					public set name(n: string) {<br>
+					this._name = n;
+					}
+					}<br>
+					let tom = new User();<br>
+					tom.name = "Tom";   // срабатывает set-метод<br>
+					console.log(tom.name);  // срабатывает get-метод
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>readonly</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Ключевое слово readonly позволяет определить свойства, которые доступны только для чтения. <br>
+					- Использование модификаторов в параметрах конструктора позволяет сократить написание кода. <br>
+					- Также мы можем вместе с модификатором readonly задать модификатор доступа.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+
+					readonly id: number;<br>
+					name: string;<br>
+					constructor(userId: number, userName: string) {<br>
+
+					this.id = userId;<br>
+					this.name = userName;
+					}
+					}<br>
+
+					let tom: User = new User(2, "Tom");<br>
+					console.log(tom.id, tom.name);<br>
+					//tom.id=34;    // Ошибка - так как id - только для чтения<br>
+
+					class User {<br>
+
+					name: string;<br>
+					constructor(private readonly id: number, userName: string) {<br>
+					this.name = userName;
+					}
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>extends</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Наследование классов <br>
+					- Тот класс от которого наследуют называется родительским или базовым классом<br>
+					- Тот класс который наследует называется подклассом или наследник<br>
+					- при наследовании класс наследует весь функционал родителя – все его свойства и функции и может их использовать. И также можно определить в подклассе новые свойства и методы, которых нет у родителя.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+
+					name: string;<br>
+					constructor(userName: string) {<br>
+
+					this.name = userName;
+					}<br>
+					getInfo(): void {<br>
+					console.log("Имя: " + this.name);
+					}
+					}<br>
+
+					class Employee extends User {<br>
+
+					company: string;<br>
+					work(): void {<br>
+					console.log(this.name + " работает в компании " + this.company);
+					}
+					}<br>
+
+					Аналог:<br>
+					let Employee = class extends User {}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>super</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					1.Если подкласс определяет свой конструктор, то в нем должен быть вызван конструктор базового класса с помощью ключевого слова super.
+					<br>
+
+					2.Причем даже если базовый класс не определяет явным образом никакого конструктора, в производном классе при определении конструктора все равно надо вызывать конструктор базового класса - в этом случае это будет вызов конструктора по умолчанию с помощью super().
+					<br>
+
+					3. вместо того, чтобы дублировть код, мы можем с помощью ключевого слова super вызвать реализацию метода из базового класса и дополнить её необходимым функционалом в классе наследнике
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User { <br>
+
+					name: string;<br>
+					constructor(userName: string) {<br>
+
+					this.name = userName;
+					}<br>
+					getInfo(): void {<br>
+					console.log("Имя: " + this.name);
+					}
+					}<br>
+
+					class Employee extends User {<br>
+
+					company: string;<br>
+					constructor(userName: string, empCompany: string) {<br>
+
+					super(userName);<br>
+					this.company = empCompany;
+					}<br>
+					work(): void {<br>
+					console.log(this.name + " работает в компании " + this.company);
+					}
+					}<br>
+					let bill: Employee = new Employee("Bill", "Apple");<br>
+
+					class User {<br>
+					name: string;
+					}<br>
+					<br>
+					2.<br>
+					class Employee extends User {<br>
+
+					company: string;<br>
+					constructor(empCompany: string) {<br>
+					super();    // вызов конструктора базового класса<br>
+					this.company = empCompany;
+					}
+					}<br><br>
+					3.<br>
+					class User {<br>
+
+					name: string;<br>
+					constructor(userName: string) {<br>
+
+					this.name = userName;
+					}<br>
+					getInfo(): void {<br>
+					console.log("Имя: " + this.name);
+					}
+					}<br>
+
+					class Employee extends User {<br>
+
+					company: string;<br>
+					constructor(userName: string, empCompany: string) {<br>
+
+					super(userName);<br>
+					this.company = empCompany;
+					}<br>
+					getInfo(): void {<br>
+					super.getInfo()<br>
+					console.log("Работает в компании: " + this.company);
+					}
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					Class / Interface Generalizations
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Кроме обобщенных функций и массивов также бывают обобщенные классы и интерфейсы. <br>
+					Только в данном случае надо учитывать, что если мы типизировали объект определенным типом, то сменить данный тип уже не получится.
+					<br>
+
+					- Чтобы принимать необходимый нам параметр используя обобщение, можно использовать конструкцию extends внутри обобщения
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class User&lt;T&gt; { <br>
+
+					private _id: T;<br>
+					constructor(id:T) {<br>
+
+					this._id=id;
+					}<br>
+					getId(): T {<br>
+
+					return this._id;
+					}
+					}<br>
+
+					let tom = new User&lt;number&gt;(3);<br>
+					console.log(tom.getId()); // возвращает number<br>
+					let alice = new User&lt;string&gt;("vsf");<br>
+					console.log(alice.getId()); // возвращает string<br>
+
+					let tom = new User&lt;number&gt;(3);<br>
+					console.log(tom.getId());<br>
+					tom = new User&lt;string&gt;("vsf"); // ошибка<br>
+
+					interface IUser&lt;T&gt; {<br>
+
+					getId(): T;
+					}<br>
+
+					class User&lt;T&gt; implements IUser&lt;T&gt; {<br>
+
+					private _id: T;<br>
+					constructor(id:T) {<br>
+
+					this._id=id;
+					}<br>
+					getId(): T {<br>
+
+					return this._id;
+					}
+					}<br>
+
+					interface IUser {<br>
+
+					getInfo();
+					}<br>
+					class User implements IUser {<br>
+
+					_id: number;<br>
+					_name: string;<br>
+					constructor(id:number, name:string) {<br>
+
+					this._id = id;<br>
+					this._name = name;
+					}<br>
+					getInfo() {<br>
+
+					console.log("id: " + this._id + "; name: " + this._name);
+					}
+					}<br>
+
+					class Employee extends User {<br>
+
+					_company: string;<br>
+					constructor(id: number, name: string, company: string) {<br>
+
+					super(id, name);<br>
+					this._company = company;
+					}<br>
+
+					getInfo() {<br>
+
+					console.log("id: " + this._id + "; name: " + this._name+"; company:"+this._company);
+					}
+					}<br>
+
+					class UserInfo&lt;T extends IUser&gt;{<br>
+
+					getUserInfo(user: T): void{<br>
+
+					user.getInfo();
+					}
+					}<br>
+
+					let tom = new User(3, "Tom");<br>
+					let alice = new Employee(4, "Alice", "Microsoft");<br>
+					let userStore = new UserInfo();<br>
+					userStore.getUserInfo(tom);<br>
+					userStore.getUserInfo(alice);
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>{new(): T;}</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Чтобы создать новый объект в коде обобщений, нам надо указать, что обобщенный тип T имеет конструктор. Это означает, что вместо параметра type:T нам надо указать type: {new(): T;}.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function UserFactory&lt;T&gt;(): T { <br>
+					return new T(); // ошибка компиляции
+					}<br>
+
+					function userFactory&lt;T&gt;(type: { new (): T; }): T {<br>
+
+					return new type();
+					}<br>
+
+
+					class User {<br>
+
+					constructor() {<br>
+					console.log("создан объект User");
+					}
+					}<br>
+
+					let user : User = userFactory(User);
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Mixin</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-функциональность миксинов (mixins) частично позволяют унаследовать свойства и методы сразу двух и более классов.
+					<br>
+					- Для наследования функционала классов в определении миксина-класса Horse применяется ключевое слово implements, после которого идет перечисление наследуемых классов.
+					<br>
+					- надо использовать специальную функцию, которая перекопирует функционал из родительских классов в миксин:
+					<br>
+					Первым параметром идет класс-миксин, а второй параметр - массив применяемых классов. <br>
+					- Миксин может унаследовать только те свойства и методы, которые непосредственно определены в применяемом классе. Поэтому данный способ не будет работать, если применяемый класс, в свою очередь, также наследует какие-то свойства и методы от другого класса.
+					<br>
+					- Если родительские классы определяют метод с одним и тем же именем, то миксин наследует только тот метод, который копируется в него последним в функции applyMixins.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					class Animal { <br>
+
+					feed():void { <br>
+					console.log("кормим животное");
+					}
+					} <br>
+
+					class Transport { <br>
+
+					speed: number=0; <br>
+					move(): void { <br>
+					if (this.speed == 0) { <br>
+					console.log("Стоим на месте");
+					} <br>
+					else if (this.speed > 0) { <br>
+					console.log("Перемещаемся со скоростью " + this.speed + " км/ч");
+					}
+					}
+					} <br>
+
+					class Horse implements Animal, Transport { <br>
+					speed: number=0; <br>
+					feed: () => void; <br>
+					move: () => void;
+					} <br>
+
+					function applyMixins(derivedCtor: any, baseCtors: any[]) { <br>
+					baseCtors.forEach(baseCtor => { <br>
+					Object.getOwnPropertyNames(baseCtor.prototype).forEach(name => { <br>
+					derivedCtor.prototype[name] = baseCtor.prototype[name];
+					});
+					});
+					} <br>
+
+					applyMixins(Horse, [Animal, Transport]); <br>
+
+					let pony: Horse = new Horse(); <br>
+					pony.feed(); <br>
+					pony.move(); <br>
+					pony.speed = 4; <br>
+					pony.move();
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>instanceOf</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-С помощью оператора instanceOf можно проверить, принадлежит ли объект определенному классу: <br>
+
+					- В случае необходимости, можно преобразовать к нужному типу. Выражение &lt;Тип&gt; переменная позволяет преобразовать переменную к типу, который идет в угловых скобках.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					let alice: Employee = new Employee("Microsoft", "Alice"); <br>
+					if (alice instanceof User) {<br>
+					console.log("Alice is a User");
+					}<br>
+					else {<br>
+					console.log("Alice is not a User");
+					}<br>
+
+					let alice: User = new Employee("Microsoft", "Alice");<br>
+
+					let aliceEmployee: Employee = alice as Employee; // преобразование к типу Employee<br>
+					console.log(aliceEmployee.company);<br>
+
+					// или так<br>
+					console.log((alice as Employee).company);
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>abstract</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-Абстрактные классы представляют классы, определенные с ключевым словом abstract. Они во многом похожи на обычные классы за тем исключением, что мы не можем создать напрямую объект абстрактного класса, используя его конструктор.
+					<br>
+					-Как правило, абстрактные классы описывают сущности, которые в реальности не имеют конкретного воплощения.
+					<br>
+					-Абстрактный метод не определяет никакой реализации. Если класс содержит абстрактные методы, то такой класс должен быть абстрактным. Кроме того, при наследовании производные классы обязаны реализовать все абстрактные методы.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					abstract class Figure {
+					} <br>
+					// let someFigure = new Figure()    // Ошибка! <br>
+
+					abstract class Figure { <br>
+					abstract getArea(): void;
+					} <br>
+					class Rectangle extends Figure{ <br>
+
+					constructor(public width: number, public height: number){ <br>
+					super();
+					} <br>
+
+					getArea(): void{ <br>
+					let square = this.width * this.height; <br>
+					console.log("area =", square);
+					}
+					} <br>
+
+					let someFigure: Figure = new Rectangle(20, 30) <br>
+					someFigure.getArea();
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------------------------------------------Interface------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="oop_interface">
+			<h1>Interface</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>interface</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Интерфейс определяет свойства и методы, которые объект должен реализовать. Другими словами, интерфейс - это определение кастомного типа данных, но без реализации.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface IUser { <br>
+					id: number; <br>
+					name: string;
+					} <br>
+
+					let employee: IUser = { <br>
+
+					id: 1, <br>
+					name: "Tom"
+					}
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Optional properties</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					При определении интерфейса мы можем задать некоторые свойства как необязательные с помощью знака вопроса. Подобные свойства реализовать необязательно:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface IUser { <br>
+					id: number; <br>
+					name: string; <br>
+					age?: number;
+					} <br>
+					let employee: IUser = { <br>
+
+					id: 1, <br>
+					name: "Alice", <br>
+					age: 23
+					} <br>
+					let manager: IUser = { <br>
+
+					id: 2, <br>
+					name: "Tom"
+					}
+				</p>
+			</div>
+		</div>
+
+				<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Partial</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Мы можем использовать Partial&ltинтерфейс&gtб, чтобы сделать все поля необязательнымию
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					type ComponentConfig = { <br>
+					  optionOne: string;
+					  optionTwo: string;
+					  optionThree: string;
+					}
+
+					  private _defaultConfig: Partial &ltComponentConfig&gt = {
+					    optionOne: '...' }
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>readonly properties</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Также интерфейс может содержать свойства только для чтения, значение которых нельзя изменять. Такие свойства определяются с помощью ключевого слова readonly:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface Point { <br>
+					readonly x: number;<br>
+					readonly y: number;
+					}<br>
+					let p: Point = { x: 10, y: 20 };
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>methods</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Кроме свойств интерфейсы могут определять функции. <br>
+					объект, который реализует интерфейс, также обязан реализовать определенную в интерфейсе функцию с тем же набором параметров и тем типом выходного результата.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface IUser { <br>
+					id: number; <br>
+					name: string; <br>
+					getFullName(surname: string): string;
+					} <br>
+					let employee: IUser = { <br>
+
+					id: 1, <br>
+					name: "Alice", <br>
+					getFullName : function (surname: string): string { <br>
+					return this.name + " " + surname;
+					}
+					}
+
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>implements</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Интерфейсы могут быть реализованы не только объектами, но и классами. Класс наследник обязан определить все те же свойства и функции, которые есть в классе родителе.
+					<br>
+					При этом объект наследник является как объектом родителя, так и объектом интерфейса:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface IUser { <br>
+					id: number;<br>
+					name: string;<br>
+					getFullName(surname: string): string;
+					}<br>
+
+					class User implements IUser{<br>
+
+					id: number;<br>
+					name: string;<br>
+					age: number;<br>
+					constructor(userId: number, userName: string, userAge: number) {<br>
+
+					this.id = userId;<br>
+					this.name = userName;<br>
+					this.age = userAge;
+					}<br>
+					getFullName(surname: string): string {<br>
+
+					return this.name + " " + surname;
+					}
+					}<br>
+
+					let tom :IUser = new User(1, "Tom", 23);<br>
+					//или<br>
+					let tom :User = new User(1, "Tom", 23);
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					Interface Inheritance
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					После наследования интерфейс наследник будет также иметь все те свойства и функции, которые определены в родителе. И тогда, класс, реализующий интерфейс наследник, должен будет реализовать также и свойства и методы интерфейса родителя.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface IMovable { <br>
+
+					speed: number; <br>
+					move(): void;
+					} <br>
+					interface ICar extends IMovable { <br>
+
+					fill(): void;
+					} <br>
+					class Car implements ICar { <br>
+
+					speed: number; <br>
+					move(): void { <br>
+
+					console.log("Машина едет со скоростью " + this.speed + " км/ч");
+					} <br>
+
+					fill(): void { <br>
+
+					console.log("Заправляем машину топливом");
+					}
+					} <br>
+					let auto = new Car();
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Function interfaces</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Интерфейсы функций содержат определение типа функции. Затем они должны быть реализованы объектом, который представляет функцию данного типа:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface FullNameBuilder { <br>
+					(name: string, surname: string): string;
+					}<br>
+
+					let simpleBuilder: FullNameBuilder = function (name:string, surname: string): string {<br>
+					return "Mr. " + name + " " + surname;
+					}<br>
+
+					let fullName = simpleBuilder("Bob", "Simpson");
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Array interfaces</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-Интерфейсы массивов описывают объекты, к которым можно обращаться по индексу, как, например, к массивам
+					<br>
+
+					- Для индексации мы можем использовать и другие типы
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface StringArray { <br>
+					[index: number]: string;
+					}<br>
+
+					let phones: StringArray;<br>
+					phones = ["iPhone 7", "HTC 10", "HP Elite x3"];<br>
+
+					let myPhone: string = phones[0];<br>
+
+					interface Dictionary {<br>
+					[index: string]: string;
+					}<br>
+
+					var colors: Dictionary = {};<br>
+					colors["red"] = "#ff0000";<br>
+					colors["green"] = "#00ff00";<br>
+					colors["blue"] = "#0000ff";
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Hybrid interfaces</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-Интерфейсы могут сочетать различные стили, могут применяться сразу как к определению объекта, так и к определению функции:
+					<br>
+					-Тип функции, определяемый в таком гибридном интерфейсе, как правило, выступает в роли конструктора объекта.
+					<br>
+					-А функция, которая представляет данный интерфейс, реализует эту функцию конструктора, и также может использовать другие свойства и методы, которые были определены в интерфейсе.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					interface PersonInfo { <br>
+					(name: string, surname: string):void;<br>
+					fullName: string;<br>
+					password: string;<br>
+					authenticate(): void;
+					}<br>
+
+					function personBuilder(): PersonInfo {<br>
+
+					let person = &lt;PersonInfo&gt;function (name: string, surname: string): void{<br>
+					person.fullName = name + " " + surname;
+					};<br>
+					person.authenticate = function () {<br>
+					console.log(person.fullName + " входит в систему с паролем " + person.password);
+					};<br>
+					return person;
+					}
+				</p>
+			</div>
+		</div>
+
+
+		<!-- ---------------------------------------------------------Namespaces------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="namespaces">
+			<h1>Namespace</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>namespace</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Для организации больших программ предназначены пространства имен. Пространства имен содержат группу классов, интерфейсов, функций, других пространств имен, которые могут использоваться в некотором общем контексте.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					namespace Personnel { <br>
+					export class Employee {<br>
+
+					constructor(public name: string){
+					}
+					}
+					}<br>
+
+					namespace Personnel {<br>
+
+					export interface IUser{<br>
+					displayInfo();
+					}<br>
+
+					export class Employee {<br>
+					constructor(public name: string){
+					}
+					}<br>
+
+					export function work(emp: Employee) : void{<br>
+					console.log(emp.name, "is working");
+					}<br>
+
+					export let defaultUser= { name: "Kate" }
+					}<br>
+
+					let tom = new Personnel.Employee("Tom")
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>export</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Чтобы типы и объекты, определенные в пространстве имен, были видны извне, они определяются с ключевым словом export.
+					<br>
+
+					- Причем вложенные пространства имен определяются со словом export. Соответственно при обращении к типам надо использовать все пространства имен.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					namespace Data{ <br>
+					export namespace Personnel { <br>
+					export class Employee { <br>
+
+					constructor(public name: string){
+					}
+					}
+					} <br>
+					export namespace Clients { <br>
+					export class VipClient { <br>
+
+					constructor(public name: string){
+					}
+					}
+					}
+					} <br>
+
+					let tom = new Data.Personnel.Employee("Tom")  <br>
+					console.log(tom.name);  <br>
+
+					let sam = new Data.Clients.VipClient("Sam");  <br>
+					console.log(sam.name);
+				</p>
+			</div>
+		</div>
+
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>import</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Чтобы сократить объем кода, мы можем использовать псевдонимы, задаваемые с помощью ключевого слова import.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					namespace Data{ <br>
+					export namespace Personnel {<br>
+					export class Employee {<br>
+
+					constructor(public name: string){
+					}
+					}
+					}
+					}<br>
+
+					import employee = Data.Personnel.Employee;<br>
+					let tom = new employee("Tom")
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------------------------------------------Module------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="modules">
+			<h1>Module</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>module</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					TypeScript поддерживает работу с модулями. Модули являются концепцией, привнесенной стандартом ES2015, однако в современных браузерах нативная поддержка модулей еще не реализована.
+					<br>
+					Модули в некотором смысле похожи на пространства имен: они могут заключать различные классы, интерфейсы, функции, объекты. Модули выделяются в отдельные файлы, что позволяет сделать код приложения более ясным и чистым, и в то же время позволяет использовать модули в других приложения. При этом модули подключаются в приложение не посредством тега &lt;script&gt;, а с помощью загрузчика модулей.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>export</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Чтобы классы, интерфейсы, функции были видны извне, они определяются с ключевым словом export.
+					<br>
+					- При экспорте можно определить псевдоним для типа с помощью ключевого слова as. Это имя затем может применяться при импорта класса.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					export interface Device{ <br>
+					name: string;
+					}<br>
+
+					export class Phone implements Device {<br>
+					name: string;<br>
+					constructor(n:string){<br>
+					this.name = n;
+					}
+					}<br>
+
+					export function Call(phone: Phone) : void{<br>
+					console.log("Make a call by", phone.name);
+					}<br>
+					interface Device{<br>
+					name: string;
+					}<br>
+
+					class Phone implements Device {<br>
+					name: string;<br>
+					constructor(n:string){<br>
+					this.name = n;
+					}
+					}<br>
+
+					function Call(phone: Phone) : void{<br>
+					console.log("Make a call by", phone.name);
+					}<br>
+					export {Device, Phone, Call as Devices};
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>import</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-Чтобы задействовать модуль в приложении, его надо импортировать с помощью оператора import. <br>
+					- После слова import определяется набор импортируемых типов - класов, интерфейсов, функций, объектов. А после слова from указывается путь к модулю.
+					<br>
+					- с помощью оператора as можно указать псевдоним для типа: <br>
+					- Можно импортировать сразу весь модуль:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					import {Phone, Call} from "./devices"; <br>
+					let iphone: Phone = new Phone("iPhone X"); <br>
+					Call(iphone); <br>
+
+					import {Phone, Call as makeCall} from "./devices"; <br>
+					let iphone: Phone = new Phone("iPhone X"); <br>
+					makeCall(iphone); <br>
+
+					import * as dev from "./devices"; <br>
+					let iphone: devPhone = new dev.Phone("iPhone X"); <br>
+					dev.Call(iphone);
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>default</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Параметры экспорта по умолчанию позволяют определить тип, который будет импортироваться из модуля по умолчанию.
+					<br>
+					Ключевое слово default позволяет установить класс SmartWatch в качестве типа по умолчанию.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					export default class SmartWatch{ <br>
+
+					model:string;
+					}<br>
+
+					import SmartWatch from "./smartwatch";<br>
+					let iwatch: SmartWatch = new SmartWatch();
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------------------------------------------Decorator------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="decorator">
+			<h1>Decorator</h1>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Class decorator</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Декораторы являются инструментом декларативного программирования, они позволяют добавить к классам и их членам метаданные и тем самым изменить их поведение без изменения их кода.
+					<br>
+					Декораторы представляют функции, которые могут применяться к классам, методам, методом доступа (геттерам и сеттерам), свойствам, параметрам.
+					<br>
+					Для применения декоратора используется знак @. Сам декоратор ставится перед названием класса. <br>
+					-Декоратор класса представляет функцию, которая принимает один параметр: <br>
+
+					- Также декораторы могут изменять результат работы конструктора. В этом случае определение функции декоратора немного меняется, но она также в качестве параметра принимает конструктор класса:
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function sealed(constructor: Function) { <br>
+					console.log("sealed decorator");<br>
+					Object.seal(constructor);<br>
+					Object.seal(constructor.prototype);
+					}<br>
+
+					@sealed<br>
+					class User {<br>
+					name: string;<br>
+					constructor(name: string){<br>
+					this.name = name;
+					}<br>
+					print():void{<br>
+					console.log(this.name);
+					}
+					}<br>
+
+					function logger&lt;TFunction extends Function&gt;(target: TFunction): TFunction{<br>
+
+					let newConstructor: Function = function(name:string){<br>
+					console.log("Creating new instance");<br>
+					this.name = name;<br>
+					this.age = 23;<br>
+					this.print = function():void{<br>
+					console.log(this.name, this.age);
+					}
+					}<br>
+					return &lt;TFunction&gt;newConstructor;
+					}<br>
+
+					@logger<br>
+					class User {<br>
+					name: string;<br>
+					constructor(name: string){<br>
+					this.name = name;
+					}<br>
+					print():void{<br>
+					console.log(this.name);
+					}
+					}
+				</p>
+			</div>
+		</div>
+
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>Method decorator</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					- Декоратор метода также представляет функцию, которая принимает три параметра: <br>
+
+					- Декоратор метода позволяет нам манипулировать параметрами и возвращаемым результатом метода.<br>
+					Декоратор принимает следующие параметры:<br>
+					1.	Функция конструктора класса для статического метода, либо прототип класса для обычного метода.<br>
+					2.	Название метода.<br>
+					3.	Объект интерфейса PropertyDescriptor:<br>
+					interface PropertyDescriptor{<br>
+					configurable?: boolean;<br>
+					enumerable?: boolean;<br>
+					value?: any;<br>
+					writable?: boolean;<br>
+					get? (): any;<br>
+					set? (v: any): void;<br>
+					}<br>
+					Его свойство value содержит определение функции. Свойство writable указывает, является ли функция модифицируемой (если значение true, то является).
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function readonly (target: Object, propertyKey: string, descriptor: PropertyDescriptor) { <br>
+					descriptor.writable = false;
+					};<br>
+
+					class User {<br>
+
+					name: string;<br>
+					constructor(name: string){<br>
+					this.name = name;
+					}<br>
+
+					@readonly<br>
+					print():void{<br>
+					console.log(this.name);
+					}
+					}<br>
+					let tom = new User("Tom");<br>
+					tom.print = function(){console.log("print has been changed");}<br>
+					tom.print();  // Tom<br>
+
+					Декоратор readonly с помощью выражения descriptor.writable = false; устанавливает, что метод, к которому применяется данный декоратор, не может быть изменен.
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Property decorator</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					-Декоратор свойства представляет функцию, которая принимает два параметра: <br>
+					-Где первый параметр представляет конструктор класса, если свойство статическое, либо прототип класса, если свойство нестатическое. А второй параметр представляет имя свойства.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function format(target: Object, propertyKey: string){ <br>
+
+					let _val = this[propertyKey];   // получаем значение свойства<br>
+
+					// геттер<br>
+					var getter = function () {<br>
+					return "Mr./Ms." + _val;
+					};<br>
+
+					// сеттер<br>
+					var setter = function (newVal) {<br>
+					_val = newVal;
+					};<br>
+
+					// удаляем свойство<br>
+					if (delete this[propertyKey]) {<br>
+
+					// И создаем новое свойство с геттером и сеттером<br>
+					Object.defineProperty(target, propertyKey, {<br>
+					get: getter,<br>
+					set: setter
+					});
+					}
+					}<br>
+
+					class User {<br>
+
+					@format<br>
+					name: string;<br>
+					constructor(name: string){<br>
+					this.name = name;
+					}<br>
+					print():void{<br>
+					console.log(this.name);
+					}
+					}<br>
+					let tom = new User("Tom");<br>
+					tom.print();<br>
+					tom.name = "Tommy";<br>
+					tom.print();
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					Accessor decorator</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Декоратор метода доступа принимает три параметра: <br>
+					Первый параметр представляет конструктора класса для статического метода, либо прототип класса для обычного метода.
+					<br>
+					Второй параметр представляет название метода. <br>
+					Третий параметр представляет объект PropertyDescriptor.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function validator(target: any, propertyKey: string, descriptor: PropertyDescriptor) { <br>
+					const oldSet = descriptor.set;<br>
+
+					descriptor.set = function(value: string) {<br>
+					if (value === "admin") {<br>
+					throw new Error("Invalid value");
+					}<br>
+
+					oldSet.call(this, value);
+					}
+					}<br>
+					class User {<br>
+
+					private _name: string;<br>
+					constructor(name: string){<br>
+					this.name = name;
+					}<br>
+
+					public get name(): string {<br>
+					return this._name;
+					}<br>
+					@validator<br>
+					public set name(n: string) {<br>
+					this._name = n;
+					}
+					}<br>
+					let tom = new User("Tom");<br>
+					tom.name= "admin";<br>
+					console.log(tom.name);
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>Decorator factory</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Фабрика декоратора представляет функцию, которая в свою очерель возвращает функцию декоратора.
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					function regex(pattern: string){ <br>
+					let expression = new RegExp(pattern);<br>
+					return function regex(target: Object, propertyName: string){<br>
+					let propertyValue = this[propertyName];<br>
+
+					// геттер<br>
+					var getter = function () {<br>
+					return propertyValue;
+					};<br>
+
+					// сеттер<br>
+					var setter = function (newVal) {<br>
+					let isValid: boolean = expression.test(newVal);<br>
+					if(isValid === false){<br>
+					throw new Error(`Value ${newVal} does not match ${pattern}`);
+					}<br>
+					else{<br>
+					console.log(`${newVal} is valid`);
+					}
+					};<br>
+					// удаляем свойство<br>
+					if (delete this[propertyName]) {<br>
+
+					// И создаем новое свойство с геттером и сеттером<br>
+					Object.defineProperty(target, propertyName, {<br>
+					get: getter,<br>
+					set: setter
+					});
+					}
+					}
+					}<br>
+					class Account{<br>
+
+					@regex("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")<br>
+					email: string;<br>
+
+					@regex("^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$")<br>
+					phone: string;<br>
+
+					constructor(email: string, phone: string){<br>
+					this.email = email; this.phone = phone;
+					}
+					}<br>
+					let acc = new Account("bir@gmail.com", "+23451235678");<br>
+					acc.email = "bir_iki_yedi";
+				</p>
+			</div>
+		</div>
+
+
+		<footer>
+			<h4>All Rights Reserved (c)</h4>
+		</footer>
+	</section>
+</main>
+
+
+
+
+
+<script src="scripts/search_typescript.js"></script>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

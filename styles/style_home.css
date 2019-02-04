@@ -1,0 +1,44 @@
+
+.practice_page{
+    margin-right: 0;
+}
+
+.technology a:link{
+    text-decoration: none;
+    color: #000;
+}
+
+.technology a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+.technology_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.practice_box{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.technology{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin: 20px 10px 0 10px;
+    padding-top: 45px;
+    border-radius: 15px;
+
+}
+
+.technology h1{
+    font-size: 35px;
+}
+
+footer {
+    margin-top: 20px;
+}

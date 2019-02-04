@@ -1,0 +1,474 @@
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+	display: flex;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	background: #f6f6f6;
+	width: 100%;
+	padding: 22px 0;
+}
+
+.header_container{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_container a{
+	color: #000;
+	font-size: 16px;
+	padding: 28px 6px 30px 6px;
+	margin-right: 45px;
+}
+
+.header_container a:hover{
+	background: yellow;
+}
+
+#menu_checkbox{
+	display:none;
+}
+
+.header_container ul{
+	display: flex;
+}
+
+nav{
+	margin-top: 20px;
+}
+
+.top_slide {
+	background: url(img/slider_background.png) no-repeat;
+}
+
+.top_container{
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 120px;
+	padding-bottom: 300px;
+}
+
+.top_slide h2{
+	background: #ffea00;
+	display: inline;
+	font-size: 70px;
+	padding: 0 13px;
+}
+
+.top_slide :nth-child(2){
+	margin-bottom: 10px;
+}
+.top_slide p{
+	background: #414146;
+	color: #fff;
+	display: inline;
+	font-size: 24px;
+	padding: 0 4px;
+}
+
+.specialize_container{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.specialize_container h3{
+	text-transform: uppercase;
+	font-size: 35px;
+}
+
+.specialize_container p{
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.specialize_cards{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.bottom_card{
+	background: #414146;
+	position: relative;
+	top: -20px;
+	width: 250px;
+	height: 85px;
+	text-align: center;
+}
+
+.first_card_bottom:after{
+	content: "";
+	position: absolute;
+    bottom: 100%;
+    left: 75%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #414146 transparent;
+}
+
+
+.bottom_card p{
+	padding-top: 20px;
+	font-size: 15px ;
+	color: #fff;
+}
+
+.top_card {
+	background: yellow;
+	width: 250px;
+	height: 200px;
+}
+
+.second_card{
+	padding-top: 32px;
+}
+
+.third_card{
+	padding-top: 40px;
+}
+
+.fourth_card{
+	padding-top: 20px;
+}
+
+.portfolio{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.portfolio h4{
+	background: #424147;
+	display: inline-block;
+	padding: 0 4px;
+	color: yellow;
+	width: 160px;
+	height: 30px;
+	padding-top: 3px;
+}
+
+.portfolio p{
+	color: #424146;
+	font-size: 16px;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+.toggles button{
+	border: none;
+	color: #424146;
+	background: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 5px;
+}
+
+.toggles button:after{
+	content: " / ";
+}
+
+.toggles button:last-child:after{
+	content: " ";
+}
+
+.posts{
+
+	width: 90%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.post img{
+	width: 250px;
+	height: 180px;
+}
+
+.our_clients{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.our_clients h4{
+	background: #424147;
+	display: inline-block;
+	padding: 0 4px;
+	color: yellow;
+	width: 160px;
+	height: 30px;
+	padding-top: 3px;
+}
+
+.our_clients p{
+	color: #424146;
+	font-size: 16px;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+footer{
+	background: #414146;
+	padding: 30px 0;
+}
+
+#footer_container{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 40% 30% 20%;
+	grid-column-gap: 3%;
+}
+
+footer h4{
+	font-size: 18px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+footer p{
+	color: #fff;
+}
+
+.about_us a{
+	color: #fff;
+	background: #000;
+	border-bottom: 2px solid yellow;
+	padding: 10px;
+	font-size: 15px;
+	display: inline-block;
+}
+
+.about_us p{
+margin-bottom: 30px;
+}
+
+.about_us h4:nth-of-type(2){
+	margin-top: 30px;
+}
+
+.contacts_photo{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 10px;
+}
+
+.tweets p{
+	margin-top: 20px;
+}
+
+.yellow_color{
+	color: yellow;
+}
+
+.tweets h4:nth-of-type(2){
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+
+.social_connecting{
+	display: flex;
+	justify-content: left;
+
+}
+
+.contacts div{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 10px;
+	padding-bottom: 15px;
+}
+
+.contacts div:nth-of-type(2) p{
+	position: relative;
+	left:-22px;
+}
+
+.contacts h4:nth-of-type(1){
+	margin-bottom: 30px;
+}
+
+.contacts h4:nth-of-type(2){
+	margin-top: 10px;
+	margin-bottom: 10px ;
+}
+
+.input_container{
+	padding-top: 20px;
+}
+
+.contacts input[type="text"]{
+	background: #414146;
+	border: transparent;
+	border-bottom: 2px solid yellow;
+}
+
+.contacts button{
+	width: 28px;
+	height: 28px;
+}
+.contacts button img{
+	position: relative;
+	left: -2px;
+	top: -2px;
+}
+
+.footer-black{
+	background: #000;
+}
+
+.footer_container_black{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.footer_container_black a{
+	color: #fff;
+	padding: 20px;
+}
+
+.footer_container_black ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+@media screen and ( max-width: 800px ) {
+
+
+	.header_container{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#main_menu {
+		display: none;
+	}
+
+	#main_menu li{
+		width: 100%;
+		display: block;
+		font-size: 12px;
+	}
+
+	#main_menu a{
+		display: block;
+		padding: 8px;
+	}
+	.toggle_button{
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+		margin-top: 20px;
+	}
+	
+	.toggle_button:after{
+		content: attr(data-open);
+		display: block;
+	}
+
+	#menu_checkbox:checked + nav[role="navigation"] #main_menu{
+
+	display: block;
+	}
+
+
+	#menu_checkbox:checked + nav[role="navigation"] .toggle_button:after{
+	
+	content: attr(data-close);
+
+	}
+
+	.header_container a{
+
+	margin-right: -65px;
+	}
+
+	#main_menu{
+		position: relative;
+		top: 30px;
+		right: 115px;
+	}
+
+	.top_container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.top_slide h2 {
+    font-size: 32px;
+} 
+
+.top_slide p {
+	font-size: 16px;
+}
+
+.specialize_container h3{
+	font-size: 32px;
+}
+
+.specialize_container p{
+	font-size: 16px;
+}
+
+.specialize_cards{
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.posts{
+
+	grid-template-columns: auto;
+}
+
+#footer_container{
+	grid-template-columns: auto;
+}
+
+
+.contacts h4:nth-of-type(1){
+	margin-top: 30px;
+	margin-bottom: 10px ;
+}
+
+.contacts div:nth-of-type(2) p{
+	position: relative;
+	left:-147px;
+}
+
+.contacts div:nth-of-type(3) p{
+	position: relative;
+	left:-73px;
+}
+
+
+}
+

@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="My Programming Directory">
+	<meta name="keywords" content="HTML , CSS , JS , Bootstrap">
+	<meta name="author" content="George Levchenko">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Code Directory</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+	<link rel="stylesheet" href="img/css/fontello.css">
+	<link rel="stylesheet" href="styles/style_index.css">
+	<link rel="stylesheet" href="styles/style_html.css">
+
+</head>
+<body>
+
+<header>
+	<h1 class="logo_big">Pro<span class="bold_black">-G-</span>running</h1>
+	<h1 class="logo_small">Pro<span class="bold_black">-G-</span></h1>
+</header>
+
+<nav class="not_responsive">
+	<ul class="left_side_nav  not_responsive">
+		<li id="menu"><a href="#">&#9776</a></li>
+		<li class="home_page not_responsive"><a href="index.html"><i class="icon-home"></i></a></li>
+		<li class="html_page not_responsive" style="background: #000"><a href="#">HTML</a></li>
+		<li class="css_page not_responsive"><a href="css.html">CSS</a></li>
+		<li class="bootstrap_page not_responsive"><a href="bootstrap.html">BootsTrap</a></li>
+		<li class="javascript_page not_responsive"><a href="javascript.html">JavaScript</a></li>
+		<li class="typescript_page not_responsive"><a href="typescript.html">TypeScript</a></li>
+		<li class="angular_page not_responsive"><a href="angular.html">Angular</a></li>
+	</ul>
+
+	<ul class="right_side_nav  not_responsive">
+		<li class="practice_page not_responsive"><a href="practice.html">Practice</a></li>
+		<li class="search_field" id="search_field_li">
+			<input type="text" placeholder=" Enter HTML Tag" id="search_field" onkeyup="searchHTML()">
+			<i class="icon-search"></i>
+		</li>
+		<!--<li class="about_page"><a href="#"><i class="icon-user"></i></a></li>-->
+	</ul>
+</nav>
+
+<main>
+	<section class="left_side_anchors">
+		<ul id="left_anchors">
+			<li><a href="#basic_html">Basic HTML</a></li>
+			<li><a href="#grouping_and_semantic">Grouping and Semantic</a></li>
+			<li><a href="#text_and_formatting">Text and Formatting</a></li>
+			<li><a href="#tables">Tables</a></li>
+			<li><a href="#lists">Lists</a></li>
+			<li><a href="#links">Links</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#media">Media</a></li>
+			<li><a href="#forms_and_inputs">Forms and Inputs</a></li>
+			<li id="global_table_anchor"><a href="#global_attributes">Global Attributes</a></li>
+		</ul>
+	</section>
+	<section class="main_text">
+
+		<div class="table_row first_row zebra1">
+			<div>
+				<h2>Tag</h2>
+			</div>
+			<div>
+				<h2>Description</h2>
+			</div>
+			<div>
+				<h2>Attribute</h2>
+			</div>
+			<div>
+				<h2>Example</h2>
+			</div>
+		</div>
+
+<!-- ---------------------------------------------------------Basic HTML------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="basic_html">
+			<h1>Basic HTML</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;!DOCTYPE html&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines document type (HTML 5)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;!DOCTYPE html&gt;</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;html&gt; &lt;/html&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an HTML document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>lang=”en-US”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;html lang=”en-US”&gt;</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;head&gt; &lt;/head&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines document information </p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>-</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;title&gt; &lt;/title&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a title for the document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;head&gt;<br>
+  				   &lt;title&gt; My HTML Book &lt;/title&gt;<br>
+				   &lt;/head&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;meta&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines metadata about an HTML document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					charset=”UTF-8”<br>
+					name=”descrition”…<br>
+					name=”keywords”…<br>
+					name=”author”…<br>
+					name=”viewport”…<br>
+					http-equiv=”refresh”…<br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;head&gt;<br>
+					&lt;meta charset="UTF-8"&gt;<br>
+					&lt;meta name="description" content="Free Web tutorials"&gt;<br>
+					&lt;meta name="keywords" content="HTML…"&gt;<br>
+					&lt;meta name="author" content="John Doe"&gt;<br>
+					&lt;meta http-equiv="refresh" content="30"&gt;<br>
+					&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; &lt;/head&gt;<br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;base&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the base URL/target for all relative URLs in a document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>href = “URL”<br>
+					target = “_blank”<br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;head&gt;<br>
+  					&lt;base href="https://www.w3schools.com/images/" target="_blank"&gt; &lt;/head&gt;
+  				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;link&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines the relationship between a document and an external resource (most used to link to style sheets)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>href=”URL”<br>
+				   rel=”stylesheet”<br>
+                   type=”text/’css”<br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;head&gt;<br>
+ 				   &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;<br>
+				   &lt;/head&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;script&gt; &lt;/script&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a client-side script</p>
+			</div>
+			<div class="third_column table_column">
+				<p>src=”URL\file”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;head&gt;<br>
+  				   &lt;script src=”script.js”&gt;&lt;/script&gt;<br>
+				   &lt;/head&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;noscript&gt; &lt;/noscript&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an alternate content for users that do not support client-side scripts</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;script&gt;<br>
+					document.write("Hello World!") <br>
+					&lt;/script&gt; <br>
+					&lt;noscript&gt; Not support Script &lt;/noscript&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;style&gt; &lt;/style&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines style information for a document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;head&gt;<br>
+				   &lt;style&gt; <br>
+				   h1 {color:red;}   p {color:blue;} <br>
+				   &lt;/style&gt; &lt;/head&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;body&gt; &lt;/body&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines document’s body</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>-</p>
+			</div>
+		</div>
+<!-- ---------------------------------------------------------Basic HTML------------------------------------------------------- -->
+<!-- ---------------------------------------------------------Text and Formatting---------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="grouping_and_semantic">
+			<h1>Grouping and Semantic</h1>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;div&gt; &lt;/div&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a section in a document (block)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;div style="background-color:lightblue"&gt; <br>
+  				   &lt;h3&gt;This is a heading&lt;/h3&gt; <br>
+  				   &lt;p&gt;This is a paragraph.&lt;/p&gt; <br>
+				   &lt;/div&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;span&gt; &lt;/span&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a section in a document (inline)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;p&gt;My mother has &lt;span style="color:blue"&gt;blue&lt;/span&gt; eyes.&lt;/p&gt;</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;header&gt; &lt;/header&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a header for a document or section</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;article&gt; <br>
+				   &lt;header&gt;  <br>
+				   &lt;h1&gt;Most important heading here&lt;/h1&gt; <br>
+				   &lt;p&gt;Some additional information here&lt;/p&gt; <br>
+				   &lt;/header&gt; <br>
+				   &lt;p&gt;Lorem Ipsum dolor set amet....&lt;/p&gt; <br>
+				   &lt;/article&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;footer&gt; &lt;/footer&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a footer for a document or section</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;footer&gt; <br>
+				   &lt;p&gt;Posted by: Hege Refsnes&lt;/p&gt; <br>
+				   &lt;p&gt;Contact information: &lt;a href="mailto:someone@example.com"&gt;
+					  someone@example.com&lt;/a&gt;.&lt;/p&gt; <br>
+				   &lt;/footer&gt; 
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;nav&gt; &lt;/nav&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines navigation links</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;nav&gt; <br>
+ 				   &lt;a href="/html/"&gt;HTML&lt;/a&gt; | <br>
+				   &lt;a href="/css/"&gt;CSS&lt;/a&gt; | <br>
+ 				   &lt;a href="/js/"&gt;JavaScript&lt;/a&gt; | <br>
+				   &lt;/nav&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;section&gt; &lt;/section&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a section in a document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;section&gt; <br>
+  					&lt;h1&gt;WWF&lt;/h1&gt; <br>
+ 					&lt;p&gt;The World Wide Fund for Nature is...&lt;/p&gt; <br>
+					&lt;/section&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;article&gt; &lt;/article&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an article</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;article&gt; <br>
+  				   &lt;h1&gt;Google Chrome&lt;/h1&gt; <br>
+ 				   &lt;p&gt;Google Chrome is a free….&lt;/p&gt; <br>
+				   &lt;/article&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;aside&gt; &lt;/aside&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines content aside from the page content</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>&lt;aside&gt; <br>
+  				   &lt;h4&gt;Epcot Center&lt;/h4&gt; <br>
+ 				   &lt;p&gt;The Epcot Center is a theme… &lt;/p&gt; <br>
+				   &lt;/aside&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;figure&gt; &lt;/figure&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies self-contained content</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;figure&gt; <br>
+  					&lt;img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228"&gt; <br>
+					&lt;/figure&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;figcaption&gt; &lt;/figcaption&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a caption for a &lt;figure&gt; element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;figure&gt; <br>
+ 					 &lt;img src="pic_trulli.jpg" alt="Trulli" style="width:100%"&gt; <br>
+ 					 &lt;figcaption&gt;Fig.1 - Trulli, Puglia, Italy.&lt;/figcaption&gt; <br>
+					&lt;/figure&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;details&gt; &lt;/details&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines additional details that the user can view or hide</p>
+			</div>
+			<div class="third_column table_column">
+				<p>open</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;details open&gt; <br>
+					Copyright 1999-2018. <br>
+					&lt;p&gt; - by Refsnes Data. All Rights Reserved.&lt;/p&gt; <br>
+					&lt;p&gt;All content and graphics on this web site are the property of the company&lt;/p&gt; <br>
+					&lt;/details&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;summary&gt; &lt;/summary&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a visible heading for a &lt;details&gt; element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;details&gt; <br>
+					&lt;summary&gt;Copyright 1999-2014.&lt;/summary&gt; <br>
+					&lt;p&gt; - by Refsnes Data. All Rights Reserved.&lt;/p&gt;<br>
+					&lt;p&gt;All content and graphics on this web site are the property of the company Refsnes Data.&lt;/p&gt; <br>
+					&lt;/details&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;main&gt; &lt;/main&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies the main content of a document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;main&gt; <br>
+					&lt;article&gt;
+					&lt;h1&gt;Google Chrome&lt;/h1&gt; <br>
+					&lt;p&gt;Google Chrome is a free, open-source web browser developed by Google, released in 2008.&lt;/p&gt; <br>
+					&lt;/article&gt; <br>
+					&lt;/main&gt; <br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;dialog&gt; &lt;/dialog&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a dialog box or window</p>
+			</div>
+			<div class="third_column table_column">
+				<p>open</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;dialog open&gt;This is an open dialog window&lt;/dialog&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;data&gt; &lt;/data&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Links the given content with a machine-readable translation</p>
+			</div>
+			<div class="third_column table_column">
+				<p>value=”number”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;ul&gt;<br>
+ 					&lt;li&gt;&lt;data value="21053"&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt;<br>
+  					&lt;li&gt;&lt;data value="21054"&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt;<br>
+  					&lt;li&gt;&lt;data value="21055"&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt;<br>
+					&lt;/ul&gt;
+				</p>
+			</div>
+		</div>
+
+<!-- ---------------------------------------------------------Grouping and Semantic-------------------------------------------- -->
+<!-- ---------------------------------------------------------Text and Formatting---------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="text_and_formatting">
+			<h1>Text and Formatting</h1>
+		</div>	
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;h1&gt;…&lt;/h6&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines HTML headings</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+					&lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
+					&lt;h3&gt;This is heading 3&lt;/h3&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;p&gt; &lt;/p&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a paragraph</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;This is some text in a paragraph.&lt;/p&gt;<br>
+					&lt;p&gt;This is some text in a paragraph.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;pre&gt; &lt;/pre&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines preformatted text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;pre&gt;<br>
+					Text in a pre element is displayed in a fixed-width font, <br> and it preserves both   spaces and <br>
+					line breaks <br>
+					&lt;/pre&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;hr&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a thematic change in the content (horizontal line)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;h1&gt;HTML&lt;/h1&gt; <br>
+					&lt;p&gt;HTML is a language for describing web pages.....&lt;/p&gt; <br>
+					&lt;hr&gt; <br>
+					&lt;h1&gt;CSS&lt;/h1&gt; <br>
+					&lt;p&gt;CSS defines how to display HTML elements.....&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;br&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Inserts a single line break</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;This text contains a line break. <br>
+					&lt;br&gt; <br>
+					This text contains a line break. &lt;/p&gt; <br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;wbr&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a possible line-break</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt; <br>
+					To learn AJAX, you must be familiar with the XML&lt;wbr&gt;Http&lt;wbr&gt;Request Object. <br>
+					&lt;/p&gt; <br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;b&gt; &lt;/b&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines bold text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;This is normal text - &lt;b&gt;and this is bold text&lt;/b&gt;.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;strong&gt; &lt;/strong&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines important text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;This is normal text - &lt;strong&gt;and this is important text&lt;/strong&gt;.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;i&gt; &lt;/i&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines italic text (alternate voice or mood)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;He named his car &lt;i&gt;The lightning&lt;/i&gt;, because it was very fast.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;em&gt; &lt;/em&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines italic important text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;He named his car &lt;em&gt;The lightning&lt;/em&gt;, it is very important.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;mark&gt; &lt;/mark&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines marked/highlighted text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;small&gt; &lt;/small&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines smaller text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;W3Schools.com - the world's best site&lt;/p&gt;
+					&lt;p&gt;&lt;small&gt;Copyright 1999-2050 by Refsnes Data&lt;/small&gt;&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;del&gt; &lt;/del&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines text that has been deleted from a document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>cite=”URL” <br>
+				   datetime=”YYYY-MM”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;s&gt; &lt;/s&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines text that is no longer correct</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;&lt;s&gt;My car is blue.&lt;/s&gt;&lt;/p&gt;<br>
+					&lt;p&gt;My new car is silver.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;ins&gt; &lt;/ins&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a text that has been inserted into a document</p>
+			</div>
+			<div class="third_column table_column">
+				<p>cite=”URL”
+					datetime=”YYYY-MM”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;u&gt; &lt;/u&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines underlined text</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;This is a &lt;u&gt;parragraph&lt;/u&gt; but not a hyperlink&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;sub&gt; &lt;/sub&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines subscripted text (Down)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;This text contains &lt;sub&gt;subscript&lt;/sub&gt; text like H2O&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;sup&gt; &lt;/sup&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines superscripted text (Up)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt; Text contains &lt;sup&gt;superscript&lt;/sup&gt; text like WWW[1]&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;bdi&gt; &lt;/bdi&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Isolates a part of text that might be formatted in a different direction from other text outside it</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;ul&gt;<br>
+					&lt;li&gt;User &lt;bdi&gt;hrefs&lt;/bdi&gt;: 60 points&lt;/li&gt;<br>
+					&lt;li&gt;User &lt;bdi&gt;jdoe&lt;/bdi&gt;: 80 points&lt;/li&gt;<br>
+					&lt;li&gt;User &lt;bdi&gt;إيان&lt;/bdi&gt;: 90 points&lt;/li&gt;<br>
+					&lt;/ul&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;bdo&gt; &lt;/bdo&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Overrides the current text direction</p>
+			</div>
+			<div class="third_column table_column">
+				<p>dir=”rtl”<br>
+				   dir=”ltr”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;bdo dir="rtl"&gt;<br>
+					This text will go right-to-left. <br>
+					&lt;/bdo&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;q&gt; &lt;/q&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a short quotation</p>
+			</div>
+			<div class="third_column table_column">
+				<p>cite=”URL”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;WWF's goal is to: <br>
+					&lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt; <br>
+					We hope they succeed.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;blockquote&gt; &lt;/blockqoute&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a section that is quoted from another source</p>
+			</div>
+			<div class="third_column table_column">
+				<p>cite=”URL”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;blockquote cite="http://www.worldwildlife.org/ "&gt; <br>
+					For 50 years, WWF has been protecting the future of nature. <br>
+					&lt;/blockquote&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;cite&gt; &lt;/cite&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines the title of a work</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch. Painted in 1893.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;address&gt; &lt;/address&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines contact information for the author/owner of a document/article</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;address&gt;  <br>
+					Example.com&lt;br&gt; <br>
+					Box 564, Disneyland&lt;br&gt; <br>
+					USA <br>
+					&lt;/address&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;abbr&gt; &lt;/abbr&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an abbreviation or an acronym</p>
+			</div>
+			<div class="third_column table_column">
+				<p>title=”explanation”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt; The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948. &lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;dfn&gt; &lt;/dfn&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Represents the defining instance of a term</p>
+			</div>
+			<div class="third_column table_column">
+				<p>title=”explanation”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;&lt;dfn id="html-def"&gt;HTML&lt;/dfn&gt; is the standard markup language for creating web pages.&lt;/p&gt; <br>
+					&lt;p&gt;Learn &lt;a href="#html-def"&gt;HTML&lt;/a&gt; now.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;ruby&gt; &lt;/ruby&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a ruby annotation (for East Asian typography)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;ruby&gt; <br>
+					漢 &lt;rt&gt; 漢漢漢 &lt;/rt&gt; <br>
+					&lt;/ruby&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;rp&gt; &lt;/rp&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines what to show in browsers that do not support ruby annotations</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;ruby&gt;<br>
+					漢 &lt;rt&gt;&lt;rp&gt;(&lt;/rp&gt;漢漢&lt;rp&gt;)&lt;/rp&gt;&lt;/rt&gt; <br>
+					&lt;/ruby&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;rt&gt; &lt;/rt&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an explanation/pronunciation of characters (for East Asian typography)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;ruby&gt;<br>
+					漢 &lt;rt&gt; 漢漢漢 &lt;/rt&gt; <br>
+					&lt;/ruby&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;code&gt; &lt;/code&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a piece of computer code</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;code&gt; <br>
+					x = 5;&lt;br&gt; <br>
+					y = 6;&lt;br&gt; <br>
+					z = x + y; <br>
+					&lt;/code&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;kbd&gt; &lt;/kbd&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines keyboard input</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;Save the document by pressing &lt;kbd&gt;Ctrl + S&lt;/kbd&gt;&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;samp&gt; &lt;/samp&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines sample output from a computer program</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;If you input wrong value, the program will return &lt;samp&gt;Error!&lt;/samp&gt;&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;var&gt; &lt;/var&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a variable</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;Einstein wrote: &lt;var&gt;E&lt;/var&gt; = &lt;var&gt;mc&lt;/var&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;meter&gt; &lt;/meter&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a scalar measurement within a known range (a gauge)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					value=”number” <br>
+					high / low=”number” <br>
+					min / max=”number” <br>
+					optimum=”number” <br>
+					form=”form_id” 
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;meter value="2" min="0" max="10"&gt;2 out of 10&lt;/meter&gt;&lt;br&gt; <br>
+					&lt;meter value="0.6"&gt;60%&lt;/meter&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;progress&gt; &lt;/progress&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Represents the progress of a task</p>
+			</div>
+			<div class="third_column table_column">
+				<p>value=”number” <br>
+				   max=”number”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;progress value="22" max="100"&gt; &lt;/progress&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;time&gt; &lt;/time&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a date/time</p>
+			</div>
+			<div class="third_column table_column">
+				<p>datetime=”value”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;p&gt;We open at &lt;time&gt;10:00&lt;/time&gt; every morning.&lt;/p&gt; <br>
+					&lt;p&gt;I have a date on &lt;time datetime="2008-02-14 20:00"&gt; Valentines day&lt;/time&gt;.&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;template&gt; &lt;/template&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a template</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;template&gt; <br>
+  					&lt;h2&gt;Flower&lt;/h2&gt; <br>
+					&lt;img src="img_white_flower.jpg"&gt; <br>
+					&lt;/template&gt;
+				</p>
+			</div>
+		</div>
+
+<!-- ---------------------------------------------------------Text and Formatting---------------------------------------------- -->
+<!-- ---------------------------------------------------------Tables----------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="tables">
+			<h1>Tables</h1>
+		</div>	
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;table&gt; &lt;/table&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					&lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					 &lt;thead&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;th&gt;Month&lt;/th&gt;<br>
+					     &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/thead&gt;<br>
+					 &lt;tfoot&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;Sum&lt;/td&gt;<br>
+					     &lt;td&gt;$180&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tfoot&gt;<br>
+					 &lt;tbody&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;January&lt;/td&gt;<br>
+					     &lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;February&lt;/td&gt;<br>
+					     &lt;td&gt;$80&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tbody&gt;<br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;th&gt; &lt;/th&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a header cell in a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					colspan (coloms devide) <br>
+					rowspan (row devide) <br>
+					sorted (direction) <br>
+					scope (col, row, colgroup,rowgroup) <br>
+					headers (related to)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					&lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					 &lt;thead&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;th&gt;Month&lt;/th&gt;<br>
+					     &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/thead&gt;<br>
+					 &lt;tfoot&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;Sum&lt;/td&gt;<br>
+					     &lt;td&gt;$180&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tfoot&gt;<br>
+					 &lt;tbody&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;January&lt;/td&gt;<br>
+					     &lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;February&lt;/td&gt;<br>
+					     &lt;td&gt;$80&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tbody&gt;<br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;tr&gt; &lt;/tr&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a row in a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					&lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					 &lt;thead&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;th&gt;Month&lt;/th&gt;<br>
+					     &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/thead&gt;<br>
+					 &lt;tfoot&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;S&lt;td&gt; &lt;/td&gt;um&lt;/td&gt;<br>
+					     &lt;td&gt;$180&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tfoot&gt;<br>
+					 &lt;tbody&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;January&lt;/td&gt;<br>
+					     &lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;February&lt;/td&gt;<br>
+					     &lt;td&gt;$80&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tbody&gt;<br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;td&gt; &lt;/td&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a cell in a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					colspan (coloms devide) <br>
+					rowspan (row devide) <br>
+					headers (related to)
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					&lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					 &lt;thead&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;th&gt;Month&lt;/th&gt;<br>
+					     &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/thead&gt;<br>
+					 &lt;tfoot&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;S&lt;td&gt; &lt;/td&gt;um&lt;/td&gt;<br>
+					     &lt;td&gt;$180&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tfoot&gt;<br>
+					 &lt;tbody&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;January&lt;/td&gt;<br>
+					     &lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;February&lt;/td&gt;<br>
+					     &lt;td&gt;$80&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tbody&gt;<br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;thead&gt; &lt;/thead&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Groups the header content in a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					&lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					 &lt;thead&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;th&gt;Month&lt;/th&gt;<br>
+					     &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/thead&gt;<br>
+					 &lt;tfoot&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;S&lt;td&gt; &lt;/td&gt;um&lt;/td&gt;<br>
+					     &lt;td&gt;$180&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tfoot&gt;<br>
+					 &lt;tbody&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;January&lt;/td&gt;<br>
+					     &lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;February&lt;/td&gt;<br>
+					     &lt;td&gt;$80&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tbody&gt;<br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;tbody&gt; &lt;/tbody&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Groups the body content in a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					&lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					 &lt;thead&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;th&gt;Month&lt;/th&gt;<br>
+					     &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/thead&gt;<br>
+					 &lt;tfoot&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;S&lt;td&gt; &lt;/td&gt;um&lt;/td&gt;<br>
+					     &lt;td&gt;$180&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tfoot&gt;<br>
+					 &lt;tbody&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;January&lt;/td&gt;<br>
+					     &lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;February&lt;/td&gt;<br>
+					     &lt;td&gt;$80&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tbody&gt;<br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;tfoot&gt; &lt;/tfoot&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Groups the footer content in a table</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					&lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					 &lt;thead&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;th&gt;Month&lt;/th&gt;<br>
+					     &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/thead&gt;<br>
+					 &lt;tfoot&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;S&lt;td&gt; &lt;/td&gt;um&lt;/td&gt;<br>
+					     &lt;td&gt;$180&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tfoot&gt;<br>
+					 &lt;tbody&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;January&lt;/td&gt;<br>
+					     &lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;February&lt;/td&gt;<br>
+					     &lt;td&gt;$80&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tbody&gt;<br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;caption&gt; &lt;/caption&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a table caption</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					&lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					 &lt;thead&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;th&gt;Month&lt;/th&gt;<br>
+					     &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/thead&gt;<br>
+					 &lt;tfoot&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;S&lt;td&gt; &lt;/td&gt;um&lt;/td&gt;<br>
+					     &lt;td&gt;$180&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tfoot&gt;<br>
+					 &lt;tbody&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;January&lt;/td&gt;<br>
+					     &lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					     &lt;td&gt;February&lt;/td&gt;<br>
+					     &lt;td&gt;$80&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+					 &lt;/tbody&gt;<br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;col&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Specifies column properties for each column within a &lt;colgroup&gt; element
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					  &lt;colgroup&gt; <br>
+					    &lt;col span="2" style="background-color:red"&gt; <br>
+					    &lt;col style="background-color:yellow"&gt; <br>
+					  &lt;/colgroup&gt; <br>
+					  &lt;tr&gt; <br>
+					    &lt;th&gt;ISBN&lt;/th&gt; <br>
+					    &lt;th&gt;Title&lt;/th&gt; <br>
+					    &lt;th&gt;Price&lt;/th&gt; <br>
+					  &lt;/tr&gt; <br>
+					  &lt;tr&gt; <br>
+					    &lt;td&gt;3476896&lt;/td&gt; <br>
+					    &lt;td&gt;My first HTML&lt;/td&gt; <br>
+					    &lt;td&gt;$53&lt;/td&gt; <br>
+					  &lt;/tr&gt; <br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;colgroup&gt; &lt;/colgroup&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Specifies a group of one or more columns in a table for formatting
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;table&gt; <br>
+					  &lt;colgroup&gt; <br>
+					    &lt;col span="2" style="background-color:red"&gt; <br>
+					    &lt;col style="background-color:yellow"&gt; <br>
+					  &lt;/colgroup&gt; <br>
+					  &lt;tr&gt; <br>
+					    &lt;th&gt;ISBN&lt;/th&gt; <br>
+					    &lt;th&gt;Title&lt;/th&gt; <br>
+					    &lt;th&gt;Price&lt;/th&gt; <br>
+					  &lt;/tr&gt; <br>
+					  &lt;tr&gt; <br>
+					    &lt;td&gt;3476896&lt;/td&gt; <br>
+					    &lt;td&gt;My first HTML&lt;/td&gt; <br>
+					    &lt;td&gt;$53&lt;/td&gt; <br>
+					  &lt;/tr&gt; <br>
+					&lt;/table&gt;
+				</p>
+			</div>
+		</div>
+
+<!-- ---------------------------------------------------------Tables----------------------------------------------------------- -->
+<!-- ---------------------------------------------------------Lists----------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="lists">
+			<h1>Lists</h1>
+		</div>	
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;ul&gt; &lt;/ul&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an unordered list</p>
+			</div>
+			<div class="third_column table_column">
+				<p>list-style-type=”disc circle square none”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;ul&gt; <br>
+					&lt;li&gt;Coffee&lt;/li&gt; <br>
+					&lt;li&gt;Tea&lt;/li&gt; <br>
+					&lt;li&gt;Milk&lt;/li&gt; <br>
+					&lt;/ul&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;ol&gt; &lt;/ol&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an ordered list</p>
+			</div>
+			<div class="third_column table_column">
+				<p>type=”1 A a I i” <br>
+				   start=”number” <br>
+				   reversed
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;ol type=”1”&gt; <br>
+					&lt;li&gt;Coffee&lt;/li&gt; <br>
+					&lt;li&gt;Tea&lt;/li&gt; <br>
+					&lt;li&gt;Milk&lt;/li&gt; <br>
+					&lt;/ol&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;li&gt; &lt;/li&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a list item</p>
+			</div>
+			<div class="third_column table_column">
+				<p>value=”number”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;ol&gt; <br>
+					&lt;li&gt;Coffee&lt;/li&gt; <br>
+					&lt;li&gt;Tea&lt;/li&gt; <br>
+					&lt;li&gt;Milk&lt;/li&gt; <br>
+					&lt;/ol&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;dl&gt; &lt;/dl&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a description list</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;dl&gt; <br>
+					&lt;dt&gt;Coffee&lt;/dt&gt; <br> 
+					    &lt;dd&gt;Black hot drink&lt;/dd&gt; <br>
+					&lt;dt&gt;Milk&lt;/dt&gt; <br>
+					    &lt;dd&gt;White cold drink&lt;/dd&gt; <br>
+					&lt;/dl&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;dt&gt; &lt;/dt&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a term/name in a description list</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;dl&gt; <br>
+					&lt;dt&gt;Coffee&lt;/dt&gt; <br> 
+					    &lt;dd&gt;Black hot drink&lt;/dd&gt; <br>
+					&lt;dt&gt;Milk&lt;/dt&gt; <br>
+					    &lt;dd&gt;White cold drink&lt;/dd&gt; <br>
+					&lt;/dl&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;dd&gt; &lt;/dd&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a description of a term/name in a description list</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;dl&gt; <br>
+					&lt;dt&gt;Coffee&lt;/dt&gt; <br> 
+					    &lt;dd&gt;Black hot drink&lt;/dd&gt; <br>
+					&lt;dt&gt;Milk&lt;/dt&gt; <br>
+					    &lt;dd&gt;White cold drink&lt;/dd&gt; <br>
+					&lt;/dl&gt;
+				</p>
+			</div>
+		</div>
+
+<!-- ---------------------------------------------------------Lists----------------------------------------------------------- -->
+<!-- ---------------------------------------------------------Links----------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="links">
+			<h1>Links</h1>
+		</div>	
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;a&gt; &lt;/a&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a hyperlink</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					href=”URL” <br>
+					target=”_blank” <br>
+					download=”filename”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;a href=https://www.w3schools.com target=”_blank”&gt;Visit W3Schools.com!&lt;/a&gt;<br>
+
+					&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt; <br>
+					&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt; <br>
+
+					&lt;a href="default.asp"&gt; <br>
+					  &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&gt; <br>
+					&lt;/a&gt; <br>
+
+					&lt;iframe src="demo_iframe.htm" name="iframe_a"&gt;&lt;/iframe&gt; <br>
+					&lt;p&gt;&lt;a href="https://www.w3schools.com" target="iframe_a"&gt;W3Schools&lt;/a&gt;&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+<!-- ---------------------------------------------------------Links----------------------------------------------------------- -->
+<!-- ---------------------------------------------------------Images----------------------------------------------------------- -->
+
+		<div class="anchor_row zebra3" id="images">
+			<h1>Images</h1>
+		</div>	
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;img&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an image</p>
+			</div>
+			<div class="third_column table_column">
+				<p>alt=”text” <br>
+				   width=”value” <br>
+				   height=”value” <br>
+				   src=”URL” <br>
+				   usemap=”#mapname” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;img src="smiley.gif" alt="Smiley face" height="42" width="42"&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;picture&gt; &lt;/picture&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a container for multiple image resources</p>
+			</div>
+			<div class="third_column table_column">
+				<p>srcset=”value” <br>
+				   media="(max-width: ??px)” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;picture&gt; <br>
+					&lt;source media="(min-width: 650px)" srcset="img_pink_flowers.jpg"&gt; <br>
+					&lt;source media="(min-width: 465px)" srcset="img_white_flower.jpg"&gt; <br>
+					&lt;img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt; <br>
+					&lt;/picture&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;map&gt; &lt;/map&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a client-side image-map</p>
+			</div>
+			<div class="third_column table_column">
+				<p>name=”value”</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap"&gt; <br>
+					&lt;map name="planetmap"&gt; <br>
+					&lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"&gt; <br>
+					&lt;area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury"&gt; <br>
+					&lt;area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus"&gt; <br>
+					&lt;/map&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;area&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an area inside an image-map</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					alt=”text” <br>
+					coords=”coordinates” <br>
+					href=”URL” <br>
+					shape=”rect circle poly” <br>
+					target=”_blank” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap"&gt; <br>
+					&lt;map name="planetmap"&gt; <br>
+					&lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"&gt; <br>
+					&lt;area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury"&gt; <br>
+					&lt;area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus"&gt; <br>
+					&lt;/map&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;canvas&gt; &lt;/canvas&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Used to draw graphics, on the fly, via scripting (usually JavaScript)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>width=”value”
+				   height=”value”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;
+					&lt;script&gt;
+					var canvas = document.getElementById("myCanvas");
+					var ctx = canvas.getContext("2d");
+					ctx.fillStyle = "#FF0000";
+					ctx.fillRect(0, 0, 80, 80);
+					&lt;/script&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;svg&gt; &lt;/svg&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a container for SVG graphics (scalar vector graphics)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>width=”value”
+				   height=”value”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;svg width="400" height="100"&gt; <br>
+					&lt;rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" /&gt; <br>
+					&lt;/svg&gt;
+				</p>
+			</div>
+		</div>
+
+<!-- ---------------------------------------------------------Images----------------------------------------------------------- -->
+<!-- ---------------------------------------------------------Media------------------------------------------------------------ -->
+
+		<div class="anchor_row zebra3" id="media">
+			<h1>Media</h1>
+		</div>	
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;iframe&gt; &lt;/iframe&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an inline frame</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					src=”URL” <br>
+					srcdoc=”HTML code” <br>
+					width=”value” <br>
+					height=”value” <br>
+					name=”text”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;iframe src="https://www.w3schools.com"&gt;&lt;/iframe&gt; <br>
+					&lt;iframe src="demo_iframe.htm" name="iframe_a"&gt;&lt;/iframe&gt; <br>
+					&lt;p&gt;&lt;a href="https://www.w3schools.com" target="iframe_a"&gt;W3Schools&lt;/a&gt;&lt;/p&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;audio&gt; &lt;/audio&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines sound content</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					src=”URL” <br>
+					autoplay <br>
+					controls <br>
+					loop <br>
+					muted <br>
+					preload=”auto metadata none”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;audio controls&gt; <br>
+					&lt;source src="hors.ogg" type="audio/ogg"&gt; <br>
+					&lt;source src="hors.mp3" type="audio/mpeg"&gt; <br>
+					Your browser does not support the audio tag. <br>
+					&lt;/audio&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;video&gt; &lt;/video&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a video or movie</p>
+			</div>
+			<div class="third_column table_column">
+				<p>src=”URL” <br>
+				   poster=”URL” <br>
+				   width=”value” <br>
+				   height=”value” <br> 
+				   autoplay <br>
+				   controls <br>
+				   loop <br>
+				   muted <br>
+				   preload=”auto metadata none”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;video width="320" height="240" controls&gt; <br>
+					&lt;source src="movie.mp4" type="video/mp4"&gt; <br>
+					&lt;source src="movie.ogg" type="video/ogg"&gt; <br>
+					Your browser does not support the video tag. <br>
+					&lt;/video&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;source&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines multiple media resources for media elements (&lt;video&gt;, &lt;audio&gt; and &lt;picture&gt;)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					src=”URL” <br>
+					srcset=”URL” <br>
+					media=”media_query” <br>
+					type=”file_type”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;audio controls&gt; <br>
+					&lt;source src="hor.ogg" type="audio/ogg"&gt; <br>
+					&lt;source src="hor.mp3" type="audio/mpeg"&gt; <br>
+					Your browser does not support the audio tag. <br>
+					&lt;/audio&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;track&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>
+					Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)
+				</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					default <br>
+					label=”text” <br>
+					src=”URL” <br>
+					srclang=”language_code” <br>
+					kind=”captions chapters descriptions metadata subtitles”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;video width="320" height="240" controls&gt; <br>
+					&lt;source src="forrest_gump.mp4" type="video/mp4"&gt; <br>
+					&lt;source src="forrest_gump.ogg" type="video/ogg"&gt; <br>
+					&lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt; <br>
+					&lt;track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt; <br>
+					&lt;/video&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;embed&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a container for an external (non-HTML) application</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					src=”URL” <br>
+					type=”media_type” <br>
+					width=”value” <br>
+					height=”value”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;embed width="400" height="50" src="bookmark.swf"&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					&lt;object&gt; &lt;/object&gt;
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an embedded object</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					data=”URL” <br>
+					form=”form_id” <br>
+					name=”text” <br>
+					type=”media_type” <br>
+					usemap=”#mapname” <br>
+					width=”value” <br>
+					height=”value” <br>
+				</p> 
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;object width="400" height="400" data="helloworld.swf"&gt;&lt;/object&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;param&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a parameter for an object</p>
+			</div>
+			<div class="third_column table_column">
+				<p> 
+					name=”parameter_name” <br>
+					value=”value” <br>
+					name=”controller autoplay…”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;object data="horse.wav"&gt;
+					&lt;param name="autoplay" value="true"&gt;
+					&lt;/object&gt;
+				</p>
+			</div>
+		</div>
+
+<!-- ---------------------------------------------------------Media------------------------------------------------------------ -->
+<!-- --------------------------------------------------------Forms and Inputs-------------------------------------------------- -->
+
+
+		<div class="anchor_row zebra3" id="forms_and_inputs">
+			<h1>Forms and Inputs</h1>
+		</div>	
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;form&gt; &lt;/form&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an HTML form for user input</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					action=”URL” <br>
+					autocomplete=”on / off” <br>
+					method=”get / post” <br>
+					name=”text” <br>
+					novalidate <br>
+					target=”_blank”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;form action="/action_page.php" method="get"&gt; <br>
+					First name: &lt;input type="text" name="fname"&gt;&lt;br&gt; <br>
+					Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt; <br>
+					&lt;input type="submit" value="Submit"&gt; <br>
+					&lt;/form&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;input&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an input control</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					accept=”media_type” <br>
+					alt=”text” <br>
+					autocomplete=”on / off” <br>
+					autofocus <br>
+					checked <br>
+					disabled <br>
+					required <br>
+					readonly <br>
+					multiple <br>
+					form=”form_id” <br>
+					formaction =”URL” <br>
+					formenctype=”value” <br>
+					formmethod=”get / post” <br>
+					formnovalidate <br>
+					formtarget=”_blank” <br>
+					pattern=”value” <br>
+					height=”value” <br>
+					width=”value” <br>
+					max=”number” <br>
+					min=”number” <br>
+					step=”number” <br>
+					size=”number” <br>
+					maxlength=”number” <br>
+					name=”text” <br>
+					placeholder=”text” <br>
+					value=”text” <br>
+					src=”URL” <br>
+					list=”datalist_id” <br>
+					type=” text <br>
+					radio <br>
+					checkbox <br>
+					button <br>
+					color <br>
+					date <br>
+					datetime-local <br>
+					email <br>
+					file <br>
+					hidden <br>
+					image <br>
+					month <br>
+					number <br>
+					password <br>
+					range <br>
+					reset <br>
+					search <br>
+					submit <br>
+					tel <br>
+					time <br>
+					url <br>
+					week” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;form action="/action_page.php"&gt; <br>
+					  First name: &lt;input type="text" name="fname"&gt;&lt;br&gt; <br>
+					  Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt; <br>
+					  &lt;input type="submit" value="Submit"&gt; <br>
+					&lt;/form&gt; <br>
+					&lt;form&gt; <br>
+					  &lt;input type="radio" name="gender" value="male" checked &gt; Male&lt;br&gt; <br>
+					  &lt;input type="radio" name="gender" value="female"&gt; <br> Female&lt;br&gt; <br>
+					  &lt;input type="radio" name="gender" value="other"&gt; Other <br>
+					&lt;/form&gt; <br>
+					&lt;form&gt; <br>
+					  &lt;input type="checkbox" name="vehicle1" value="Bike"&gt; I have a bike&lt;br&gt; <br>
+					  &lt;input type="checkbox" name="vehicle2" value="Car"&gt; I have a car <br>
+					&lt;/form&gt; <br>
+					&lt;form&gt; <br>
+					  User name:&lt;br&gt; <br>
+					  &lt;input type="text" name="username"&gt;&lt;br&gt; <br>
+					  User password:&lt;br&gt; <br>
+					  &lt;input type="password" name="psw"&gt; <br>
+					&lt;/form&gt; <br>
+					&lt;form&gt; <br>
+					  Birthday: <br>
+					  &lt;input type="date" name="bday"&gt; <br>
+					&lt;/form&gt; <br>
+					&lt;form&gt; <br>
+					  Select a file: &lt;input type="file" name="myFile"&gt; <br>
+					&lt;/form&gt; <br>
+					&lt;form&gt; <br>
+					  Quantity (between 1 and 5): <br>
+					  &lt;input type="number" name="quantity" min="1" max="5"&gt; <br>
+					&lt;/form&gt; <br>
+					&lt;form&gt;<br>
+					  &lt;input type="range" name="points" min="0" max="10"&gt;<br>
+					&lt;/form&gt;<br>
+					&lt;form&gt;<br>
+					  Search Google:<br>
+					  &lt;input type="search" name="googlesearch"&gt;<br>
+					&lt;/form&gt;<br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;textarea&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a multiline input control (text area)</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					autofocus <br>
+					disabled <br>
+					readonly <br>
+					required <br>
+					cols=”number” <br>
+					rows=”number” <br>
+					maxlength=”number” <br>
+					form=”form_id” <br>
+					name=”text” <br>
+					placeholder=”text” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;textarea rows="4" cols="50"&gt;
+					At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+					&lt;/textarea&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;label&gt; &lt;/label&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a label for an &lt;input&gt; element</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					for=”element_id” <br>
+					form=”form_id”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;form action="/action_page.php"&gt; <br>
+					  &lt;label for="male"&gt;Male&lt;/label&gt; <br>
+					  &lt;input type="radio" name="gender" id="male" value="male"&gt;&lt;br&gt; <br>
+					  &lt;label for="female"&gt;Female&lt;/label&gt; <br>
+					  &lt;input type="radio" name="gender" id="female" value="female"&gt;&lt;br&gt; <br>
+					  &lt;label for="other"&gt;Other&lt;/label&gt; <br>
+					  &lt;input type="radio" name="gender" id="other" value="other"&gt;&lt;br&gt;&lt;br&gt; <br>
+					  &lt;input type="submit" value="Submit"&gt; <br>
+					&lt;/form&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;select&gt; &lt;/select&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a drop-down list</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					autofocus <br>
+					disabled <br>
+					form=”form_id” <br>
+					name=”name” <br>
+					required <br>
+					multiple <br>
+					size=”number”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;select&gt; <br>
+					  &lt;option value="volvo"&gt;Volvo&lt;/option&gt; <br>
+					  &lt;option value="saab"&gt;Saab&lt;/option&gt; <br>
+					  &lt;option value="merc"&gt;Mercedes&lt;/option&gt; <br>
+					  &lt;option value="audi"&gt;Audi&lt;/option&gt; <br>
+					&lt;/select&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;datalist&gt; &lt;/datalist&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Specifies a list of pre-defined options for input controls</p>
+			</div>
+			<div class="third_column table_column">
+				<p>-</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;input list="browsers"&gt; <br>
+					&lt;datalist id="browsers"&gt; <br>
+					  &lt;option value="Internet Explorer"&gt; <br>
+					  &lt;option value="Firefox"&gt; <br>
+					  &lt;option value="Chrome"&gt; <br>
+					  &lt;option value="Opera"&gt; <br>
+					  &lt;option value="Safari"&gt; <br>
+					&lt;/datalist&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>
+					&lt;option&gt; &lt;/option&gt;
+				</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines an option in a drop-down list</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					disabled <br>
+					selected <br>
+					label=”text” <br>
+					value=”text” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;select&gt; <br>
+					  &lt;optgroup label="Swedish Cars"&gt; <br>
+					    &lt;option value="volvo"&gt;Volvo&lt;/option&gt; <br>
+					    &lt;option value="saab"&gt;Saab&lt;/option&gt; <br>
+					  &lt;/optgroup&gt; <br>
+					  &lt;optgroup label="German Cars"&gt; <br>
+					    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt; <br>
+					    &lt;option value="audi"&gt;Audi&lt;/option&gt; <br>
+					  &lt;/optgroup&gt; <br>
+					&lt;/select&gt; <br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;optgroup&gt; &lt;/optgroup&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a group of related options in a drop-down list</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					disabled <br>
+					label=”text” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;select&gt; <br>
+					  &lt;optgroup label="Swedish Cars"&gt; <br>
+					    &lt;option value="volvo"&gt;Volvo&lt;/option&gt; <br>
+					    &lt;option value="saab"&gt;Saab&lt;/option&gt; <br>
+					  &lt;/optgroup&gt; <br>
+					  &lt;optgroup label="German Cars"&gt; <br>
+					    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt; <br>
+					    &lt;option value="audi"&gt;Audi&lt;/option&gt; <br>
+					  &lt;/optgroup&gt; <br>
+					&lt;/select&gt; <br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;fieldset&gt; &lt;/fieldset&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Groups related elements in a form</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					disabled <br>
+					form=”form_id” <br>
+					name=”text” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;form&gt; <br>
+					  &lt;fieldset&gt; <br>
+					    &lt;legend&gt;Personalia:&lt;/legend&gt; <br>
+					    Name: &lt;input type="text"&gt;&lt;br&gt; <br>
+					    Email: &lt;input type="text"&gt;&lt;br&gt; <br>
+					    Date of birth: &lt;input type="text"&gt; <br>
+					  &lt;/fieldset&gt; <br>
+					&lt;/form&gt; <br>
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra2">
+			<div class="first_column table_column">
+				<p>&lt;button&gt; &lt;/button&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines a clickable button</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					autofocus <br>
+					disabled <br>
+					form=”form_id” <br>
+					formaction =”URL” <br>
+					formenctype=”value” <br>
+					formmethod=”get / post” <br>
+					formnovalidate <br>
+					formtarget=”_blank” <br>
+					name=”name” <br>
+					value=”text” <br>
+					type=”button reset submit” <br>
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;button type="button" onclick="alert('Hello world!')"&gt;Click Me!&lt;/button&gt;
+				</p>
+			</div>
+		</div>
+
+		<div class="table_row zebra1">
+			<div class="first_column table_column">
+				<p>&lt;output&gt; &lt;/output&gt;</p>
+			</div>
+			<div class="second_column table_column">
+				<p>Defines the result of a calculation</p>
+			</div>
+			<div class="third_column table_column">
+				<p>
+					for=”element_id” <br>
+					form=”form_id” <br>
+					name=”name”
+				</p>
+			</div>
+			<div class="fourth_column table_column">
+				<p>
+					&lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;0 <br>
+					  &lt;input type="range" id="a" value="50"&gt;100 <br>
+					  +&lt;input type="number" id="b" value="50"&gt; <br>
+					  =&lt;output name="x" for="a b"&gt;&lt;/output&gt;
+				</p>
+			</div>
+		</div>
+
+<!-- --------------------------------------------------------Forms and Inputs-------------------------------------------------- -->
+<!-- --------------------------------------------------------Global atritutes-------------------------------------------------- -->
+
+
+		<div class="anchor_row global_table zebra3" id="global_attributes">
+			<h1>Global Attributes</h1>
+		</div>	
+
+		<div class="global_table_row zebra1">
+			<div class="global_first_column table_column">
+				<p>style</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies an inline CSS style for an element</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra2">
+			<div class="global_first_column table_column">
+				<p>id</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies a unique id for an element</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra1">
+			<div class="global_first_column table_column">
+				<p>class</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies one or more classnames for an element (refers to a class in a style sheet)</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra2">
+			<div class="global_first_column table_column">
+				<p>title</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies extra information about an element</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra1">
+			<div class="global_first_column table_column">
+				<p>data-*</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Used to store custom data private to the page or application</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra2">
+			<div class="global_first_column table_column">
+				<p>hidden</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies that an element is not yet, or is no longer, relevant</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra1">
+			<div class="global_first_column table_column">
+				<p>draggable</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies whether an element is draggable or not</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra2">
+			<div class="global_first_column table_column">
+				<p>dropzone</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies whether the dragged data is copied, moved, or linked, when dropped</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra1">
+			<div class="global_first_column table_column">
+				<p>accesskey</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies a shortcut key to activate/focus an element</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra2">
+			<div class="global_first_column table_column">
+				<p>contenteditable</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies whether the content of an element is editable or not</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra1">
+			<div class="global_first_column table_column">
+				<p>dir</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies the text direction for the content in an element</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra2">
+			<div class="global_first_column table_column">
+				<p>lang</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies the language of the element's content</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra1">
+			<div class="global_first_column table_column">
+				<p>spellcheck</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies whether the element is to have its spelling and grammar checked or not</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra2">
+			<div class="global_first_column table_column">
+				<p>tabindex</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies the tabbing order of an element</p>
+			</div>
+		</div>
+
+		<div class="global_table_row zebra1">
+			<div class="global_first_column table_column">
+				<p>translate</p>
+			</div>
+			<div class="global_second_column table_column">
+				<p>Specifies whether the content of an element should be translated or not</p>
+			</div>
+		</div>
+
+		<footer>
+			<h4>All Rights Reserved (c)</h4>
+		</footer>
+	</section>
+</main>
+
+<script src="scripts/search_html.js"></script>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

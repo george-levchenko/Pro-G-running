@@ -1,0 +1,127 @@
+
+/*-------------------Anchors-------------------*/
+
+.left_side_anchors ul{
+	padding-left: 20px;
+	padding-top: 30px;
+}
+
+.left_side_anchors li{
+	padding: 5px 0;
+}
+
+.left_side_anchors a{
+	color: #000;
+	font-weight: 900;
+}
+
+.global_table_anchor_top{
+	 margin-top: 20px;
+ }
+
+#global_table_anchor_bottom{
+	margin-bottom: 30px;
+}
+
+/*-----------------------Main table----------------------*/
+
+.table_row{
+	display: grid;
+	grid-template-columns: 20% 25% 15% 40%;
+}
+
+.table_column{
+	height: 75px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.first_column{
+	font-weight: 900;
+	padding-top: 25px;
+}
+
+.first_column p{
+	font-size: 16px;
+}
+
+.second_column{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.third_column{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.fourth_column{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.first_row div{
+	text-align: center;
+	height: auto;
+	font-weight: 900;
+}
+
+.anchor_row{
+	text-align: center;
+}
+
+.anchor_row h1{
+	font-weight: 900;
+}
+
+.extended_row{
+	height: auto;
+}
+
+
+/*---------------------Selector Table-----------------------*/
+
+.selector_table_row{
+	display: grid;
+	grid-template-columns: 25% 15% 60%;
+}
+
+.selector_first_column{
+	font-weight: 900;
+	padding-top: 25px;
+}
+
+.selector_first_column p{
+	font-size: 16px;
+}
+
+.selector_second_column{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.selector_third_column{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.selector_table_column{
+	height: 75px;
+	text-align: center;
+	overflow: hidden;
+}
+
+/*-----------------------Tips/Theory----------------------*/
+
+
+.setup_row{
+
+}
+.tips_table_row{
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+.hidden {
+	display: none;
+}
