@@ -2285,7 +2285,14 @@
 				<p>Возвращает псевдослучайное число в интервале [0,1) – то есть между 0 (включительно) и 1 (не включая). Генератор случайных чисел инициализуется текущим временем.</p>
 			</div>
 			<div class="third_column table_column">
-				<p>-</p>
+				<p>
+
+				function randomInteger(min, max) { <br>
+				    var rand = min + Math.random() * (max + 1 - min); <br>
+				    rand = Math.floor(rand);<br>
+				    return rand;<br>
+				  }
+				</p>
 			</div>
 		</div>
 
